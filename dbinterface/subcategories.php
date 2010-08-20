@@ -21,7 +21,7 @@ USA
  if (in_array('view', $_SESSION['privs'])) {
   if ($_GET['view'] == 'categories') {
 
-   $sql = "select path, text from referendum_category " .
+   $sql = "select path, text, type_name from referendum_category " .
 	  " order by path";
 
    $rows = pg_query($dbconn, $sql)
@@ -40,6 +40,7 @@ USA
      }
     }
     $node['text'] = $row[1];
+    $node['type'] = $row[2];
    }
   } else {
 

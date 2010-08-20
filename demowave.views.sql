@@ -419,13 +419,16 @@ create or replace view referendum_category as
   from
    (select distinct on (t.path)
      t.*,
+     tt.name as type_name,
      c.title,
      c.completed
     from
      referendum_status as c,
-     referendum_type_category as t
+     referendum_type_category as t,
+     referendum_type as tt
     where     c.area >= c.breakpoint
           and c.referendum = t.referendum
+	  and t.type = tt.id
     order by t.path, c.completed) as c
  where c.add;
 
