@@ -158,3 +158,9 @@ div.law_info {
  border: #880000 solid 1px;
  color: #880000;
 }
+
+.law_importexport {
+ float: right;
+ border: 1px solid #000000;
+ background: #ffffff;
+}

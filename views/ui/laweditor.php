@@ -167,12 +167,9 @@ USA
 
 <form method="post" enctype="multipart/form-data">
  <input type='hidden' name='law_edit_continue' value='yes' />
- <h2><?php E_("Propose changes"); ?></h2>
 
- <table>
+ <table class="law_importexport">
   <?php
-   echo drawInputRow(T_("Referendum title"), "<input type='text' name='law_title' value='{$_SESSION["laweditor"]["title"]}' />");
-
    echo drawInputRow(T_("Import from file"),
 		      "<input name='law_import_file' type='file'>");
    echo drawInputRow('', "<input name='law_import' type='submit' value='" . T_("Import") . "'>");
@@ -180,7 +177,13 @@ USA
    $lawexporturl = '?' . queryString(queryConstruct(array('categoryview' => 'laweditor', 'format' => 'export', 'law_edit_continue' => 'yes')));
    echo drawInputRow(T_("Export to file"), "<a href='{$lawexporturl}' target='demowave-export'>" . T_("Export") . "</a>");
 
-   echo drawInputRow('', "<input name='law_save' type='submit' value='" . T_("Create") . "'>");
+  ?>
+ </table>
+
+ <table>
+  <?php
+   echo drawInputRow(T_("Change summary"), "<input type='text' name='law_title' value='{$_SESSION["laweditor"]["title"]}' />");
+   echo drawInputRow('', "<input name='law_save' type='submit' value='" . T_("Save changes") . "'>");
   ?>
  </table>
 

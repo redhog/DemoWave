@@ -28,12 +28,6 @@ USA
 
  $menu = array();
 
- if (isset($_SESSION['user']))
-  $menu[] = drawSelectView('user', T_('My settings'));
-
- if (in_array('usermanagement', $_SESSION['privs']))
-  $menu[] = drawSelectView('users', T_('Account management'));
-
  if (in_array('view', $_SESSION['privs']))
   $menu[] = drawSelectView('categories', T_('Referendums'));
 
@@ -41,10 +35,16 @@ USA
   $menu[] = drawSelectView('searchreferendumsglobal', T_('Search'));
 
  if (isset($_SESSION['user']))
-  $menu[] = drawSelectView('logout', T_('Log out'));
+  $menu[] = drawSelectView('user', T_('My settings'));
+
+ if (in_array('usermanagement', $_SESSION['privs']))
+  $menu[] = drawSelectView('users', T_('Account management'));
 
  if (in_array('register', $_SESSION['privs']))
   $menu[] = drawSelectView('register', T_('Register'));
+
+ if (isset($_SESSION['user']))
+  $menu[] = drawSelectView('logout', T_('Log out'));
 
  if (!isset($_SESSION['user']))
   $menu[] = drawSelectView('login', T_('Log in'));

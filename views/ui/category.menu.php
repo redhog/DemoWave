@@ -28,7 +28,7 @@ USA
 
  $menu = array();
 
- $menu[] = drawSelectCategoryView('referendums', T_('Referendums'), array(), array('referendum_search_'));
+ $menu[] = drawSelectCategoryView('referendums', T_('Proposals'), array(), array('referendum_search_'));
  $menu[] = drawSelectCategoryView('decisions', T_('Decisions'), array(), array('referendum_search_'));
  $menu[] = drawSelectCategoryView('rejections', T_('Rejections'), array(), array('referendum_search_'));
 
@@ -38,9 +38,9 @@ USA
 
  if (in_array('propose', $_SESSION['privs']) && $is_category)
   if ($category_type == 'law')
-   $menu[] = drawSelectCategoryView('laweditor', T_('Propose referendum'), array('law_proposal', 'law_date'));
+   $menu[] = drawSelectCategoryView('laweditor', T_('Edit'), array('law_proposal', 'law_date'));
   else
-   $menu[] = drawSelectCategoryView('newreferendum', T_('Propose referendum'));
+   $menu[] = drawSelectCategoryView('newreferendum', T_('Propose text'));
 
  echo implode(' ', $menu);
 ?>
