@@ -30,14 +30,22 @@ USA
   if ($_GET['law_date'] != '')
    $law_date_filter = " and completed < '{$_GET['law_date']}'";
 
-  $sql = "select distinct on (path)
+  $new_referendums_sql = "false";
+  if ($_GET["law_proposal"]) {
+    $proposal = pg_escape_string($_GET["law_proposal"]);
+    $new_referendums_sql = "v.referendum = {$proposal}";
+  }
+  $sql = "select -- distinct on (path)
 	   l.path, l.add, v.referendum, v.title as reftitle, v.completed as changed, l.title, l.text
  	  from
-	   referendum_completed as v,
+	   referendum_status as v,
 	   referendum_type_law as l
 	  where     v.path = '{$category_path}'
 	        and l.referendum = v.referendum
-	        {$law_date_filter}
+		and (   (    intervaleabs(v.area) >= v.breakpoint
+		         and v.area > '0 second'
+			 {$law_date_filter})
+                     or {$new_referendums_sql})
 	  order by path, completed desc";
   $rows = pg_query($dbconn, $sql)
    or die('Uanble to query for paragraphs');
@@ -57,9 +65,18 @@ USA
      $node['sub'][$item] = array('sub' => array());
     $node = &$node['sub'][$item];
    }
-   $node['sub'][$head] = $law;
-  }
 
+   if ($law['referendum'] == $_GET["law_proposal"]) {
+    if (!isset($node['sub'][$head]))
+     $node['sub'][$head] = array('sub' => array());
+    $node['sub'][$head]['edit'] = $law;
+   } else {
+    $node['sub'][$head] = $law;
+   }
+  }
+  
+
+/*
   if ($_GET["law_proposal"]) {
    $proposal = pg_escape_string($_GET["law_proposal"]);
    $sql = "select
@@ -86,7 +103,7 @@ USA
     $node['edit'] = $change;
    }
   }
-
+*/
   if (   $_GET['categoryview'] == 'laweditor'
       && !isset($_POST["law_edit_continue"])) {
    $_SESSION["laweditor"] = array('laws' => $laws, 'current' => 0);

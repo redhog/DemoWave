@@ -19,6 +19,8 @@ USA
 */ ?>
 <?php
  function drawLawContentList($node) {
+  if (isset($node['edit']))
+   return drawLawContentList($node['edit']);
   $res = '';
   if (isset($node['add']) && $node['title'] != '')
    $res .= sprintf("<a href='#law-%s'>%s: %s</a>\n",

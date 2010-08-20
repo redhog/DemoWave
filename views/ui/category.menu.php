@@ -38,7 +38,7 @@ USA
 
  if (in_array('propose', $_SESSION['privs']) && $is_category)
   if ($category_type == 'law')
-   $menu[] = drawSelectCategoryView('laweditor', T_('Propose referendum'));
+   $menu[] = drawSelectCategoryView('laweditor', T_('Propose referendum'), array('law_proposal', 'law_date'));
   else
    $menu[] = drawSelectCategoryView('newreferendum', T_('Propose referendum'));
 
