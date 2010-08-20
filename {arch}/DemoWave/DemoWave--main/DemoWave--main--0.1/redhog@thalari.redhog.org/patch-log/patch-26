@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-26
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov  3 00:19:12 CET 2006
+Standard-date: 2006-11-02 23:19:12 GMT
+Modified-files: demowave.demo.sql demowave.sql login.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-26
+Summary: Changed to a new way of storing whether a user is active or not
+Keywords: 
+

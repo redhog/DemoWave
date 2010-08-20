@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-97
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov 22 19:39:08 CET 2006
+Standard-date: 2006-11-22 18:39:08 GMT
+Modified-files: dbinterface/law.php demowave.css
+    views/ui/law.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-97
+Summary: Changed the law paragraph in-mem-format to a tree
+Keywords: 
+

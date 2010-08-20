@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-51
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 23:49:27 CET 2006
+Standard-date: 2006-11-08 22:49:27 GMT
+Modified-files: dbinterface/save_users.php help/index.html
+    views/categoryinfo.php views/listreferendums.php
+    views/menu.php views/searchreferendumsglobal.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-51
+Summary: Forgot some small renames
+Keywords: 
+

@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-74
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov 15 02:50:09 CET 2006
+Standard-date: 2006-11-15 01:50:09 GMT
+Modified-files: dbinterface/referendums.php
+    views/newreferendum.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-74
+Summary: Moved an sql select from the view to the dbinterface, where it should be
+Keywords: 
+

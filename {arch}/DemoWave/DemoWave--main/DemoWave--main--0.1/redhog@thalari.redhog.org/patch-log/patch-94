@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-94
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 23:56:14 CET 2006
+Standard-date: 2006-11-20 22:56:14 GMT
+Modified-files: views/export/law.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-94
+Summary: Added a content-disposition header for exports
+Keywords: 
+

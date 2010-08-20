@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-49
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 22:59:25 CET 2006
+Standard-date: 2006-11-08 21:59:25 GMT
+Modified-files: dbinterface/law.php views/law.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-49
+Summary: Simplified the law date handling so that it will be able to handle large sets of dates
+Keywords: 
+

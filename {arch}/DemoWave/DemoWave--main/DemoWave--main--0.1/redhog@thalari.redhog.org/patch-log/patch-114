@@ -1,0 +1,13 @@
+Revision: DemoWave--main--0.1--patch-114
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Jul 19 21:55:27 CEST 2007
+Standard-date: 2007-07-19 19:55:27 GMT
+Modified-files: dbinterface/save_new_referendum.php
+    help/index.en.html input/laweditor.php
+    views/export/law.php views/export/laweditor.php
+    views/ui/laweditor.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-114
+Summary: php4ification
+Keywords: 
+

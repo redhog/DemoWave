@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-90
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 22:25:32 CET 2006
+Standard-date: 2006-11-20 21:25:32 GMT
+Modified-files: TODO dbinterface/save_new_referendum.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-90
+Summary: Made new referendums redirect to the correct categoryview too
+Keywords: 
+

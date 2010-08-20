@@ -1,0 +1,13 @@
+Revision: DemoWave--main--0.1--patch-122
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Jan 31 10:48:23 CET 2009
+Standard-date: 2009-01-31 09:48:23 GMT
+Modified-files: dbinterface/save_law_editor.php
+    dbinterface/save_new_referendum.php general.css
+    views/ui/law.php views/ui/listreferendums.php
+    views/ui/navigation.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-122
+Summary: Layout of subcategory list and of headings
+Keywords: 
+

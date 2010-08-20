@@ -1,0 +1,15 @@
+Revision: DemoWave--main--0.1--patch-65
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Nov 11 15:14:03 CET 2006
+Standard-date: 2006-11-11 14:14:03 GMT
+Removed-files: .arch-ids/demowave.demo.sql.id
+    demowave.demo.sql
+Modified-files: config.php dbinterface/referendums.php
+    dbinterface/save_new_referendum.php demowave.css
+    demowave.sql help/index.en.html index.php
+    views/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-65
+Summary: Integrated the FUDforum
+Keywords: 
+

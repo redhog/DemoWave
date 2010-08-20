@@ -1,0 +1,46 @@
+Revision: DemoWave--main--0.1--patch-92
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 23:22:30 CET 2006
+Standard-date: 2006-11-20 22:22:30 GMT
+New-files: views/.arch-ids/ui.php.id views/ui.php
+    views/ui/.arch-ids/=id
+New-directories: views/ui views/ui/.arch-ids
+Renamed-files: views/.arch-ids/category.menu.php.id views/ui/.arch-ids/category.menu.php.id
+    views/.arch-ids/category.php.id views/ui/.arch-ids/category.php.id
+    views/.arch-ids/categoryinfo.php.id views/ui/.arch-ids/categoryinfo.php.id
+    views/.arch-ids/law.php.id views/ui/.arch-ids/law.php.id
+    views/.arch-ids/listreferendums.php.id views/ui/.arch-ids/listreferendums.php.id
+    views/.arch-ids/login.php.id views/ui/.arch-ids/login.php.id
+    views/.arch-ids/logout.php.id views/ui/.arch-ids/logout.php.id
+    views/.arch-ids/menu.php.id views/ui/.arch-ids/menu.php.id
+    views/.arch-ids/newreferendum.php.id views/ui/.arch-ids/newreferendum.php.id
+    views/.arch-ids/referendums.php.id views/ui/.arch-ids/referendums.php.id
+    views/.arch-ids/register.php.id views/ui/.arch-ids/register.php.id
+    views/.arch-ids/searchreferendums.php.id views/ui/.arch-ids/searchreferendums.php.id
+    views/.arch-ids/searchreferendumsglobal.php.id views/ui/.arch-ids/searchreferendumsglobal.php.id
+    views/.arch-ids/subcategories.php.id views/ui/.arch-ids/subcategories.php.id
+    views/.arch-ids/user.php.id views/ui/.arch-ids/user.php.id
+    views/.arch-ids/users.php.id views/ui/.arch-ids/users.php.id
+    views/category.menu.php views/ui/category.menu.php
+    views/category.php views/ui/category.php
+    views/categoryinfo.php views/ui/categoryinfo.php
+    views/law.php views/ui/law.php
+    views/listreferendums.php views/ui/listreferendums.php
+    views/login.php views/ui/login.php
+    views/logout.php views/ui/logout.php
+    views/menu.php views/ui/menu.php
+    views/newreferendum.php views/ui/newreferendum.php
+    views/referendums.php views/ui/referendums.php
+    views/register.php views/ui/register.php
+    views/searchreferendums.php views/ui/searchreferendums.php
+    views/searchreferendumsglobal.php views/ui/searchreferendumsglobal.php
+    views/subcategories.php views/ui/subcategories.php
+    views/user.php views/ui/user.php
+    views/users.php views/ui/users.php
+Modified-files: index.php views/ui/category.php
+    views/ui/referendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-92
+Summary: Changed the view handling code to accommodate for several types of output (XML, pdf, etc)
+Keywords: 
+

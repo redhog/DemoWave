@@ -1,0 +1,37 @@
+Add a referendum type that only allows _one_ (or n) referendum(s) to
+go through in the categoy and then "closes" the category.
+
+Add printout of largest area (compared to breakpoint) in
+subcategories.
+
+Allow sorting of sub-categories.
+
+Simplify URLs to referendums and laws.
+
+Add a simple markup for referendum content that includes a simple URN
+format for linking to laws and referendums. Proposal:
+urn:ref:CATEGORY/REFERENDUM, or urn:law:CATEGORY/LAW, e.g
+urn:ref:cabinet.commonwealth.britain/1324 and
+urn:law:laws.commonwealth.britain/4711/
+
+Add graphical diagrams of vote-sum-changes.
+
+There is no anonymity in the database (a DB administrator can
+compromize anonymity). To solve this is rather compelex, because you
+need to know what votes to cancel when disabling a user in a
+referendum. Proposed solution:
+
+  Store the plain-text password in RAM while a user is logged in.
+
+  Use a hash-function from the password (with a different salt from
+  the ones used to store it in the suers table, possibly a different
+  for each referendum) as user id in the vote table for a referendum.
+
+  Never cancel a vote, or decrease the number of "active users" for an
+  on-going referendum, i.e. voting rights are given on a referendum by
+  referendum basis, and are never revoked for a referendum allthough
+  the right to change ones' vote can be revoked (and is revoked at the
+  same time ones' right to vote in new referendums is revoked).
+
+  To add extra security, the user password might not be saved in RAM,
+  but a hash, that is again hashed for every referendum.

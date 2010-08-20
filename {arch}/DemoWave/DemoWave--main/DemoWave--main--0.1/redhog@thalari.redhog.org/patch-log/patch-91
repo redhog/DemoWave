@@ -1,0 +1,21 @@
+Revision: DemoWave--main--0.1--patch-91
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 23:04:48 CET 2006
+Standard-date: 2006-11-20 22:04:48 GMT
+New-files: input/.arch-ids/=id
+    input/.arch-ids/category.php.id
+    input/.arch-ids/globalreferendums.php.id
+    input/.arch-ids/referendums.php.id
+    input/.arch-ids/users.php.id input/category.php
+    input/globalreferendums.php input/referendums.php
+    input/users.php
+New-directories: input input/.arch-ids
+Modified-files: dbinterface/category.php
+    dbinterface/globalreferendums.php
+    dbinterface/referendums.php dbinterface/users.php
+    index.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-91
+Summary: Moved some input handling to its own directory
+Keywords: 
+

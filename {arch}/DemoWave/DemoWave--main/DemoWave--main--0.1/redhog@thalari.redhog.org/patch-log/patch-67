@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-67
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Nov 11 15:39:18 CET 2006
+Standard-date: 2006-11-11 14:39:18 GMT
+Modified-files: dbinterface/save_new_referendum.php
+    locale/sv/LC_MESSAGES/demowave.po
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-67
+Summary: Translated the message in the top-post in FUDforum for a referendum
+Keywords: 
+

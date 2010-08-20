@@ -1,0 +1,21 @@
+Revision: DemoWave--main--0.1--patch-128
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Feb  5 23:08:53 CET 2009
+Standard-date: 2009-02-05 22:08:53 GMT
+New-patches: main@demowave.gna.org/DemoWave--main--0.1--patch-1
+    main@demowave.gna.org/DemoWave--main--0.1--patch-2
+    redhog@thalari.redhog.org/DemoWave--main--0.1--patch-128
+Summary: Update to head of trunk
+Keywords: 
+
+
+
+Patches applied:
+
+ * main@demowave.gna.org/DemoWave--main--0.1--patch-1
+   tag of redhog@thalari.redhog.org/DemoWave--main--0.1--patch-109
+
+ * main@demowave.gna.org/DemoWave--main--0.1--patch-2
+   Merged lots of cleanups / layout cleanups
+

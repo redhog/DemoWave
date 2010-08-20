@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-33
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Nov  4 03:09:38 CET 2006
+Standard-date: 2006-11-04 02:09:38 GMT
+Modified-files: demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-33
+Summary: More optimizations to the views
+Keywords: 
+

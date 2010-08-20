@@ -1,0 +1,15 @@
+Revision: DemoWave--main--0.1--patch-42
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Tue Nov  7 02:19:32 CET 2006
+Standard-date: 2006-11-07 01:19:32 GMT
+New-files: dbinterface/.arch-ids/save_register.php.id
+    dbinterface/save_register.php
+    views/.arch-ids/register.php.id views/register.php
+Modified-files: dbinterface/privs.php
+    dbinterface/save_new_votation.php index.php
+    views/menu.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-42
+Summary: Added a registration feature
+Keywords: 
+

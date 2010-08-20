@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE law PUBLIC "DemoWave//law//0.1.0" "/home/redhog/Projects/DemoWave/DemoWave/DTD/law/0.1.0.dtd">
+<law title="Some changes">
+ <p id='47'>
+  <p id='11.2'>
+   <h>para 47.11.2</h>
+   text 47.11.2
+  </p>
+  <p>
+   <h>para 47.11.something</h>
+   text 47.11.something greater than 2
+  </p>
+ </p>
+ <p>
+  <h>para something</h>
+  text something greater than 47
+ </p>
+ <p id='32.23.445' delete='' />
+</law>

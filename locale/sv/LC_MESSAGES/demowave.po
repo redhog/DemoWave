@@ -1,0 +1,476 @@
+# DemoWave Swedish translations
+# DemoWave
+# Copyright (C) 2006 RedHog (Egil Möller) <redhog@redhog.org>
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+# USA
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-10 15:07+0100\n"
+"PO-Revision-Date: 2006-11-10 14:13+0100\n"
+"Last-Translator: RedHog (Egil Möller) <redhog@redhog.org>\n"
+"Language-Team: sv <demowave-sv@redhog.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: utils.php:79
+msgid "Unknown sorting key"
+msgstr "Okänd sorteringsnyckel"
+
+#: utils.php:96
+#, php-format
+msgid "<tr><td></td><td>%s</td></tr>"
+msgstr ""
+
+#: utils.php:98
+#, php-format
+msgid "<tr><td>%s:</td><td>%s</td></tr>"
+msgstr ""
+
+#: utils.php:133
+msgid "Unknown type for drawSearchField"
+msgstr ""
+
+#: utils.php:139
+msgid "First"
+msgstr "Första"
+
+#: utils.php:140
+msgid "Previous"
+msgstr "Föregående"
+
+#: utils.php:141
+msgid "Next"
+msgstr "Nästa"
+
+#: utils.php:142
+msgid "Last"
+msgstr "Sista"
+
+#: utils.php:160
+#, php-format
+msgid "<div class='nextprevpage'>"
+msgstr ""
+
+#: utils.php:161
+#, php-format
+msgid " <span class='prevpage'>"
+msgstr ""
+
+#: utils.php:162 utils.php:165
+#, php-format
+msgid "  %s %s"
+msgstr ""
+
+#: utils.php:163 utils.php:166
+#, php-format
+msgid " </span>"
+msgstr ""
+
+#: utils.php:164
+#, php-format
+msgid " <span class='nextpage'>"
+msgstr ""
+
+#: utils.php:167
+#, php-format
+msgid "</div>"
+msgstr ""
+
+#: views/categoryinfo.php:5 views/categoryinfo.php:6
+msgid "Type"
+msgstr "Typ"
+
+#: views/categoryinfo.php:6 views/newreferendum.php:28
+#: views/categoryinfo.php:7
+msgid "Breakpoint"
+msgstr "Brytpunkt"
+
+#: views/categoryinfo.php:13 views/categoryinfo.php:14
+msgid "Show"
+msgstr "Visa"
+
+#: views/categoryinfo.php:14 views/categoryinfo.php:15
+msgid "Current laws"
+msgstr "Nuvarande stadgar"
+
+#: views/categoryinfo.php:15 views/listreferendums.php:7
+#: views/listreferendums.php:13 views/menu.php:16 views/categoryinfo.php:16
+msgid "Referendums"
+msgstr "Omröstningar"
+
+#: views/categoryinfo.php:17 views/categoryinfo.php:18
+msgid "Description"
+msgstr "Beskrivning"
+
+#: views/listreferendums.php:7 views/listreferendums.php:11
+msgid "Decisions"
+msgstr "Beslut"
+
+#: views/listreferendums.php:7 views/listreferendums.php:15
+msgid "Rejected proposals"
+msgstr "Förkastade förslag"
+
+#: views/listreferendums.php:27 views/searchreferendums.php:15
+#: views/searchreferendumsglobal.php:12 views/users.php:21 views/users.php:50
+msgid "Id"
+msgstr "Id"
+
+#: views/listreferendums.php:28 views/searchreferendums.php:21
+#: views/searchreferendumsglobal.php:16
+msgid "Title"
+msgstr "Titel"
+
+#: views/listreferendums.php:29 views/searchreferendums.php:27
+#: views/searchreferendumsglobal.php:20
+msgid "Started"
+msgstr "Startades"
+
+#: views/listreferendums.php:32 views/listreferendums.php:38
+#: views/searchreferendums.php:33 views/searchreferendumsglobal.php:24
+msgid "Estimate"
+msgstr "Uppskattad sluttid"
+
+#: views/listreferendums.php:32 views/listreferendums.php:36
+#: views/searchreferendums.php:35 views/searchreferendumsglobal.php:26
+msgid "Passed"
+msgstr "Godkändes"
+
+# msgstr "Godkänd"
+#: views/listreferendums.php:32 views/listreferendums.php:40
+#: views/searchreferendums.php:37 views/searchreferendumsglobal.php:28
+msgid "Rejected"
+msgstr "Förkastades"
+
+# msgstr "Förkastad"
+#: views/listreferendums.php:42 views/searchreferendums.php:16
+#: views/searchreferendumsglobal.php:13
+msgid "Total"
+msgstr "Totalsumma"
+
+#: views/listreferendums.php:43 views/searchreferendums.php:22
+#: views/searchreferendumsglobal.php:17
+msgid "Current"
+msgstr "Summa"
+
+#: views/listreferendums.php:44 views/searchreferendums.php:28
+#: views/searchreferendumsglobal.php:21 views/users.php:29 views/users.php:54
+msgid "Vote"
+msgstr "Röst"
+
+#: views/listreferendums.php:63 views/listreferendums.php:69
+msgid "1 Yes"
+msgstr "1 Ja"
+
+#: views/listreferendums.php:64 views/listreferendums.php:70
+msgid "0 No vote"
+msgstr "0 Ingen röst"
+
+#: views/listreferendums.php:65 views/listreferendums.php:71
+msgid "-1 No"
+msgstr "-1 Nej"
+
+#: views/listreferendums.php:82
+msgid "Action: Add category %s<br />"
+      "For referendums of type: %s<br />"
+      "Description: %s<br />"
+msgstr "Åtgärd: Lägg till kategorin %s<br />"
+       "För omröstningar av följande typ: %s<br />"
+       "Beskrivning: %s<br />"
+
+#: views/listreferendums.php:86
+msgid "type"
+msgstr "typ"
+
+#: views/listreferendums.php:89
+#, php-format
+msgid "Action: Remove category %s<br />"
+msgstr "Åtgärd: Ta bort kategorin %s<br />"
+
+#: views/listreferendums.php:98
+#, php-format
+msgid ""
+"<h3>%s: %s</h3>\n"
+"%s"
+msgstr ""
+
+#: views/listreferendums.php:103
+#, php-format
+msgid "<h3>%s: (Removed)</h3>"
+msgstr "<h3>%s: (Borttagen)</h3>"
+
+#: views/login.php:8
+#, php-format
+msgid "<tr><td>Username:</td><td>%s</td></tr>"
+msgstr "<tr><td>Användarnamn:</td><td>%s</td></tr>"
+
+#: views/login.php:10
+#, php-format
+msgid "<tr><td>Password:</td><td>%s</td></tr>"
+msgstr "<tr><td>Lösenord:</td><td>%s</td></tr>"
+
+#: views/menu.php:10
+msgid "My settings"
+msgstr "Mina inställningar"
+
+#: views/menu.php:13
+msgid "Account management"
+msgstr "Kontohantering"
+
+#: views/menu.php:19 views/searchreferendums.php:42
+#: views/searchreferendumsglobal.php:32
+msgid "Search"
+msgstr "Sök"
+
+#: views/menu.php:22 views/logout.php:7
+msgid "Log out"
+msgstr "Logga ut"
+
+#: views/menu.php:25 views/register.php:24
+msgid "Register"
+msgstr "Registrera"
+
+#: views/menu.php:28 views/login.php:1 views/login.php:14
+msgid "Log in"
+msgstr "Logga in"
+
+#: views/menu.php:30
+msgid "Help"
+msgstr "Hjälp"
+
+#: views/newreferendum.php:10
+msgid "Add/remove category"
+msgstr "Lägg till/ta bort kategori"
+
+#: views/newreferendum.php:12
+msgid "Add category"
+msgstr "Lägg till"
+
+#: views/newreferendum.php:13
+msgid "Remove category"
+msgstr "Ta bort"
+
+#: views/newreferendum.php:17
+msgid "Unable to query for referendum types: "
+msgstr "Kunde hämta omröstningstyper: "
+
+#: views/newreferendum.php:22
+msgid "Category type"
+msgstr "Kategorityp"
+
+#: views/newreferendum.php:32
+msgid "Path"
+msgstr "Sökväg"
+
+#: views/newreferendum.php:36 views/newreferendum.php:40
+msgid "Text"
+msgstr "Text"
+
+#: views/newreferendum.php:63
+msgid "Add paragraph"
+msgstr "Lägg till paragraf"
+
+#: views/newreferendum.php:64 views/newreferendum.php:68
+#: views/newreferendum.php:71
+msgid "Add field"
+msgstr "Lägg till"
+
+#: views/newreferendum.php:67 views/newreferendum.php:90
+msgid "Change paragraph"
+msgstr "Ändra paragraf"
+
+#: views/newreferendum.php:70
+msgid "Remove paragraph"
+msgstr "Ta bort paragraf"
+
+#: views/newreferendum.php:87
+msgid "Add new paragraph %s after"
+msgstr "Lägg till paragraf %s efter"
+
+#: views/newreferendum.php:93
+msgid "Delete paragraph"
+msgstr "Ta bort paragraf"
+
+#: views/newreferendum.php:113
+msgid "Create"
+msgstr "Skapa"
+
+#: views/searchreferendums.php:34 views/searchreferendumsglobal.php:25
+msgid "Status"
+msgstr "Status"
+
+#: views/searchreferendums.php:36 views/searchreferendumsglobal.php:27
+msgid "Active"
+msgstr "Aktiv"
+
+#: views/searchreferendumsglobal.php:1
+msgid "Search for referendums in all categories"
+msgstr "Sök efter omröstningar i alla kategorier"
+
+#: views/searchreferendumsglobal.php:36
+#, php-format
+msgid "Referendums found in %s categories"
+msgstr "Omröstningar funna i %s kategorier"
+
+#: views/searchreferendumsglobal.php:41 views/category.php:3
+msgid "Category"
+msgstr "Kategori"
+
+#: views/searchreferendumsglobal.php:42
+msgid "Matches"
+msgstr "Omröstningar"
+
+#: views/user.php:8 views/register.php:7
+msgid "Name"
+msgstr "Namn"
+
+#: views/user.php:10 views/users.php:51
+msgid "Username"
+msgstr "Användarnamn"
+
+#: views/user.php:11 views/users.php:25 views/users.php:52
+msgid "Given name"
+msgstr "Förnamn"
+
+#: views/user.php:12 views/users.php:26 views/users.php:53
+msgid "Surname"
+msgstr "Efternamn"
+
+#: views/user.php:15 views/register.php:16
+msgid "Password"
+msgstr "Lösenord"
+
+#: views/user.php:17
+msgid "New password"
+msgstr "Nytt lösenord"
+
+#: views/user.php:18
+msgid "Retype password"
+msgstr "En gång till"
+
+#: views/users.php:22
+msgid "User name"
+msgstr "Användarnamn"
+
+#: views/users.php:30 views/users.php:33 views/users.php:67 views/users.php:72
+msgid "Enabled"
+msgstr "Ja"
+
+#: views/users.php:30 views/users.php:33 views/users.php:68 views/users.php:73
+msgid "Disabled"
+msgstr "Nej"
+
+#: views/users.php:32
+msgid "Manage"
+msgstr "Hantera konton"
+
+#: views/users.php:42
+#, php-format
+msgid "%s: Users"
+msgstr "%s: Användare"
+
+#: views/categoryinfo.php:3
+msgid "About this category"
+msgstr "Om denna kategori"
+
+#: views/categorypath.php:2
+msgid "Current category: "
+msgstr "Kategori: "
+
+#: views/categorypath.php:12
+msgid "Top"
+msgstr "Rot"
+
+#: views/law.php:1
+msgid "Paragraphs"
+msgstr "Paragrafer"
+
+#: views/law.php:8
+msgid "Show paragraphs as of"
+msgstr "Visa stadgar från (datum/tid)"
+
+#: views/law.php:11
+msgid "Select date"
+msgstr "Välj datum"
+
+#: views/listreferendums.php:112
+msgid "Cast votes"
+msgstr "Lägg röster"
+
+#: views/logout.php:1
+msgid "Really log out?"
+msgstr "Logga ut?"
+
+#: views/newreferendum.php:3
+msgid "Add new referendum"
+msgstr "Lägg till omröstning"
+
+#: views/newreferendum.php:22
+msgid "For referendums of type"
+msgstr "För omröstningar av följande typ<br />"
+
+#: views/register.php:1
+msgid "Register a new account"
+msgstr "Registrera nytt användarkonto"
+
+#: views/searchreferendums.php:3
+msgid "Search for referendums"
+msgstr "Sök efter omröstningar"
+
+#: views/subcategories.php:2
+msgid "Sub-categories"
+msgstr "Underkategorier"
+
+#: views/user.php:1
+msgid "Account settings"
+msgstr "Mina inställningar"
+
+#: views/user.php:21
+msgid "Save"
+msgstr "Spara"
+
+#: views/users.php:10
+msgid "Search for users"
+msgstr "Sök efter användare"
+
+#: dbinterface/save_referendums_vote.php:10
+msgid "Unable to insert vote: "
+msgstr "Kunde spara röst: "
+
+#: dbinterface/save_referendums_vote.php:11
+msgid "Vote registered for referendum %s"
+msgstr "Röst registrerad för omröstning %s"
+
+msgid "category"
+msgstr "kategori"
+
+msgid "text"
+msgstr "text"
+
+msgid "law"
+msgstr "stadgar"
+
+msgid "Discussion forum"
+msgstr "Diskussionsforum"
+
+msgid "Go to"
+msgstr "Gå till"
+
+msgid "This thread is for discussions on the above DemoWave administered referendum."
+msgstr "Denna diskussionstråd är till för diskussioner om ovanstpående omröstning administrerad av DemoWave."

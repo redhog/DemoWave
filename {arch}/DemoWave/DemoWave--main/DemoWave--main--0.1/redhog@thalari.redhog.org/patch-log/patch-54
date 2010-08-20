@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-54
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Nov  9 23:33:30 CET 2006
+Standard-date: 2006-11-09 22:33:30 GMT
+Modified-files: index.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-54
+Summary: Oups, left an absolute path to my workdir in the source
+Keywords: 
+

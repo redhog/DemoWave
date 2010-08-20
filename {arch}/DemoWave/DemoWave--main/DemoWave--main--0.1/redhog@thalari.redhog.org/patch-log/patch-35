@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-35
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Nov  5 22:17:10 CET 2006
+Standard-date: 2006-11-05 21:17:10 GMT
+Modified-files: dbinterface/votations.php demowave.css
+    demowave.sql utils.php views/decisions.php
+    views/votations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-35
+Summary: Added sorting of votations
+Keywords: 
+

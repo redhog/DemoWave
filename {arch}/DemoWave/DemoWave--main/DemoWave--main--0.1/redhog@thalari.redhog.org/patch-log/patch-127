@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-127
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Jan 31 19:32:03 CET 2009
+Standard-date: 2009-01-31 18:32:03 GMT
+Modified-files: dbinterface/referendums.php law-editor.css
+    list.css view.css views/ui/law.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-127
+Summary: Better padding, truncation of precission to usefull levels
+Keywords: 
+

@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-47
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 22:19:35 CET 2006
+Standard-date: 2006-11-08 21:19:35 GMT
+Modified-files: dbinterface/save_new_votation.php
+    demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-47
+Summary: Fixed a bug in the law paragraph id generation code
+Keywords: 
+

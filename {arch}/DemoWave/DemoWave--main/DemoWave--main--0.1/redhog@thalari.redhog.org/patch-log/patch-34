@@ -1,0 +1,13 @@
+Revision: DemoWave--main--0.1--patch-34
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Nov  4 22:19:17 CET 2006
+Standard-date: 2006-11-04 21:19:17 GMT
+Modified-files: dbinterface/category.php
+    dbinterface/save_votations_vote.php
+    dbinterface/votations.php demowave.demo.sql demowave.sql
+    login.php views/votations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-34
+Summary: New, iterative db structure that is _fast_ and usabled
+Keywords: 
+

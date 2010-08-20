@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-82
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov 17 10:55:57 CET 2006
+Standard-date: 2006-11-17 09:55:57 GMT
+Modified-files: TODO demowave.css views/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-82
+Summary: Added colorization of referendums according to their status
+Keywords: 
+

@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-30
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov  3 02:10:27 CET 2006
+Standard-date: 2006-11-03 01:10:27 GMT
+Modified-files: demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-30
+Summary: Some new sum+subquery to order+distinct changes
+Keywords: 
+

@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-52
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Nov  9 00:28:52 CET 2006
+Standard-date: 2006-11-08 23:28:52 GMT
+New-files: .arch-ids/LICENSE.id LICENSE
+Modified-files: help/index.html views/categoryinfo.php
+    views/menu.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-52
+Summary: Updated the documentation a bit
+Keywords: 
+

@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-8
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Sep 21 10:49:35 CEST 2006
+Standard-date: 2006-09-21 08:49:35 GMT
+Modified-files: demowave.demo.sql demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-8
+Summary: Divided vote-sum by number of users, to turn breakpoint into an absolute value - the number of days it takes for a votation to go through if everyone votes in its favour
+Keywords: 
+

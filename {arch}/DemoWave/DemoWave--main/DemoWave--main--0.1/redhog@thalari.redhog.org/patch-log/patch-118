@@ -1,0 +1,20 @@
+Revision: DemoWave--main--0.1--patch-118
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Jan 21 18:41:41 CET 2009
+Standard-date: 2009-01-21 17:41:41 GMT
+Renamed-files: views/ui/.arch-ids/category.php.id views/ui/.arch-ids/category.left.php.id
+    views/ui/category.php views/ui/category.left.php
+Modified-files: config.php demowave.views.sql general.css
+    help/index.en.html help/index.sv.html list.css view.css
+    views/export/graph.php views/ui.php
+    views/ui/category.left.php views/ui/category.menu.php
+    views/ui/categoryinfo.php views/ui/law.php
+    views/ui/laweditor.php views/ui/listreferendums.php
+    views/ui/navigation.php views/ui/newreferendum.php
+    views/ui/searchreferendums.php
+    views/ui/searchreferendumsglobal.php views/ui/user.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-118
+Summary: Lots of smaller UI changes to make the UI more obvious
+Keywords: 
+

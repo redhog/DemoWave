@@ -1,0 +1,8 @@
+<!ELEMENT h ( #PCDATA ) >
+
+<!ELEMENT law ( p+ ) >
+<!ATTLIST law title CDATA #IMPLIED >
+
+<!ELEMENT p ( #PCDATA | h | p )* >
+<!ATTLIST p delete CDATA #IMPLIED >
+<!ATTLIST p id NMTOKEN #IMPLIED >

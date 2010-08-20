@@ -1,0 +1,14 @@
+Revision: DemoWave--main--0.1--patch-86
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 19:33:57 CET 2006
+Standard-date: 2006-11-20 18:33:57 GMT
+New-files: DTD/.arch-ids/=id DTD/law/.arch-ids/0.1.0.dtd.id
+    DTD/law/.arch-ids/=id DTD/law/0.1.0.dtd
+New-directories: DTD DTD/.arch-ids DTD/law DTD/law/.arch-ids
+Modified-files: dbinterface/save_new_referendum.php
+    utils.php views/newreferendum.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-86
+Summary: Added an import-function for laws
+Keywords: 
+

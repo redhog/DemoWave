@@ -1,0 +1,84 @@
+table.list {
+ border-collapse: collapse;
+ width: 100%;
+}
+
+.list th {
+ border-style: solid;
+ border-color: #ffffff;
+ border-width: 2px;
+ font-size: 10pt;
+ font-family: serif;
+ font-weight: normal;
+ font-variant: small-caps;
+ background: #cccccc;
+}
+
+.list td {
+ padding-right: 6px;
+}
+
+.list td:first-child,
+.list th:first-child {
+ padding-left: 6px;
+}
+
+.list_item_collapsed td {
+}
+
+.list_item_expansion td:first-child {
+ background: inherit;
+}
+
+.list_item_expansion td {
+ background: #ffffff;
+ padding: 6px;
+}
+
+.list_item a {
+ text-decoration: none;
+ color: #000000;
+}
+
+.list_item_referendum_passed a {
+ color: #008800;
+}
+
+.list_item_referendum_active a {
+ color: #000000;
+}
+
+.list_item_referendum_rejected a {
+ color: #880000;
+}
+
+.list_item_collapsed td,
+.list_item_expansion td {
+ padding-bottom: 10px;
+}
+
+tr:first-child {
+ border-left: 6px solid #cccccc;
+}
+
+tr.even_row {
+ background: #f0f0ff;
+}
+
+tr.odd_row {
+ background: #fff0f0;
+}
+
+tr.even_row {
+ border-left: 6px solid #5e5e9b;
+}
+
+tr.odd_row {
+ border-left: 6px solid #9b5e5e;
+}
+
+.emptytable {
+ text-align: center;
+ padding: 6px;
+ font-weight: bold;
+}

@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-117
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Feb 17 20:16:27 CET 2008
+Standard-date: 2008-02-17 19:16:27 GMT
+New-files: help/.arch-ids/graph.reject.png.id
+    help/graph.reject.png
+Modified-files: help/index.en.html help/index.sv.html
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-117
+Summary: Added an example section to the help
+Keywords: 
+

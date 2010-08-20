@@ -1,0 +1,19 @@
+.sort {
+ text-decoration: none;
+}
+
+.sort_not_selected {
+ color: #000000;
+}
+
+.sort_selected {
+ color: #ff0000;
+}
+
+.sort_desc:after {
+ content: " (desc)";
+}
+
+.sort_asc:after {
+ content: " (asc)";
+}

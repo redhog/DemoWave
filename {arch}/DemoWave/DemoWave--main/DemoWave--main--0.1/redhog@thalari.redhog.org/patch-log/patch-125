@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-125
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Jan 31 14:07:31 CET 2009
+Standard-date: 2009-01-31 13:07:31 GMT
+Modified-files: dbinterface/graph.php general.css
+    views/ui/searchreferendumsglobal.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-125
+Summary: Bugfix for postgres dates and some layout changes
+Keywords: 
+

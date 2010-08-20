@@ -1,0 +1,31 @@
+Revision: DemoWave--main--0.1--patch-5
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Tue Sep 19 23:54:06 CEST 2006
+Standard-date: 2006-09-19 21:54:06 GMT
+New-files: dbinterface/.arch-ids/=id
+    dbinterface/.arch-ids/save_new_votation.php.id
+    dbinterface/.arch-ids/save_votations_vote.php.id
+    dbinterface/.arch-ids/save_vote.php.id
+    dbinterface/.arch-ids/subcategories.php.id
+    dbinterface/.arch-ids/votation.php.id
+    dbinterface/.arch-ids/votations.php.id
+    dbinterface/save_new_votation.php
+    dbinterface/save_votations_vote.php
+    dbinterface/save_vote.php dbinterface/subcategories.php
+    dbinterface/votation.php dbinterface/votations.php
+    views/.arch-ids/categorypath.php.id
+    views/.arch-ids/newvotation.php.id
+    views/.arch-ids/subcategories.php.id
+    views/.arch-ids/votations.php.id views/categorypath.php
+    views/newvotation.php views/subcategories.php
+    views/votations.php
+New-directories: dbinterface dbinterface/.arch-ids
+Removed-files: views/.arch-ids/categories.php.id
+    views/categories.php
+Modified-files: demowave.sql head.php index.php
+    views/votation.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-5
+Summary: New design and more features
+Keywords: 
+

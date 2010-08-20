@@ -1,0 +1,32 @@
+Revision: DemoWave--main--0.1--patch-61
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov 10 15:26:52 CET 2006
+Standard-date: 2006-11-10 14:26:52 GMT
+New-files: .arch-ids/updatetranslations.sh.id
+    help/.arch-ids/index.sv.html.id help/index.sv.html
+    updatetranslations.sh
+New-directories: locale/sv/.arch-ids
+    locale/sv/LC_MESSAGES/.arch-ids
+Removed-directories: locale/sv_SE/.arch-ids
+    locale/sv_SE/LC_MESSAGES/.arch-ids
+Renamed-files: help/.arch-ids/index.html.id help/.arch-ids/index.en.html.id
+    help/index.html help/index.en.html
+    locale/sv_SE/.arch-ids/=id locale/sv/.arch-ids/=id
+    locale/sv_SE/LC_MESSAGES/.arch-ids/=id locale/sv/LC_MESSAGES/.arch-ids/=id
+    locale/sv_SE/LC_MESSAGES/.arch-ids/demowave.po.id locale/sv/LC_MESSAGES/.arch-ids/demowave.po.id
+Renamed-directories: locale/sv_SE locale/sv
+Modified-files: compiletranslations.sh
+    dbinterface/save_referendums_vote.php index.php
+    locale/demowave.pot locale/sv/LC_MESSAGES/demowave.po
+    utils.php views/category.php views/categoryinfo.php
+    views/categorypath.php views/law.php
+    views/listreferendums.php views/login.php
+    views/logout.php views/menu.php views/newreferendum.php
+    views/register.php views/searchreferendums.php
+    views/searchreferendumsglobal.php
+    views/subcategories.php views/user.php views/users.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-61
+Summary: Got translations working, thanks to php-gettext
+Keywords: 
+

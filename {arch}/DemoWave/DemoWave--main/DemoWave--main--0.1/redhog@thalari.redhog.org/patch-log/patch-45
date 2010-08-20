@@ -1,0 +1,13 @@
+Revision: DemoWave--main--0.1--patch-45
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 20:47:25 CET 2006
+Standard-date: 2006-11-08 19:47:25 GMT
+Modified-files: dbinterface/save_new_votation.php
+    dbinterface/votations.php demowave.sql
+    views/categoryinfo.php views/newvotation.php
+    views/votations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-45
+Summary: Law type votations work now
+Keywords: 
+

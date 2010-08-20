@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-105
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Nov 26 06:10:18 CET 2006
+Standard-date: 2006-11-26 05:10:18 GMT
+Modified-files: dbinterface/save_law_editor.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-105
+Summary: Fixed a bug in the sql-generation for adding paragraphs
+Keywords: 
+

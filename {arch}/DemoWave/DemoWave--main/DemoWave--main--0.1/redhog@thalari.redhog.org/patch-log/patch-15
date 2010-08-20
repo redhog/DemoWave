@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-15
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Sep 22 21:20:42 CEST 2006
+Standard-date: 2006-09-22 19:20:42 GMT
+Modified-files: demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-15
+Summary: Fixde a bug in vote_last_sum_span that made it generate rows
+Keywords: 
+

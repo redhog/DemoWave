@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-24
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Tue Oct 31 03:38:55 CET 2006
+Standard-date: 2006-10-31 02:38:55 GMT
+Modified-files: demowave.css index.php views/category.php
+    views/decisions.php views/newvotation.php
+    views/subcategories.php views/votations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-24
+Summary: Some more cosmetical changes
+Keywords: 
+

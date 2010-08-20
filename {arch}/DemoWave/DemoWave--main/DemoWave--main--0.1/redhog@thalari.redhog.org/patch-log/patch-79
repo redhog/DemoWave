@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-79
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov 17 09:17:32 CET 2006
+Standard-date: 2006-11-17 08:17:32 GMT
+New-files: .arch-ids/TODO.id TODO
+Modified-files: help/index.en.html help/index.sv.html
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-79
+Summary: Moved the todo to its own file and added quite some entries
+Keywords: 
+

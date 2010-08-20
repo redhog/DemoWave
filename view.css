@@ -1,0 +1,131 @@
+div.menu {
+ border-bottom: #cccccc solid 1px;
+ padding-top: 6px;
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+a.menu {
+ text-decoration: none;
+ color: #000000;
+ background: #ffffff;
+ border: #cccccc solid 1px;
+}
+
+a.menu_current {
+ color: #000000;
+ background: #cccccc;
+}
+
+div.viewmenu {
+ padding-top: 6px;
+ border-bottom: #cccccc solid 1px;
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+a.viewmenu {
+ text-decoration: none;
+ color: #000000;
+ background: #ffffff;
+ border: #cccccc solid 1px;
+}
+
+a.viewmenu_current {
+ color: #000000;
+ background: #cccccc;
+}
+
+.main {
+ width: 100%;
+}
+
+.view > * {
+ width: 100%;
+}
+
+.message {
+ background:#FFFF88;
+ border: 2px solid black;
+ margin: 6px;
+ padding: 12px;
+}
+
+.view {
+ padding: 20px;
+}
+
+.subview {
+ border-left: #cccccc solid 1px;
+ border-right: #cccccc solid 1px;
+ border-bottom: #cccccc solid 1px;
+ padding: 6px;
+}
+
+.categorypath {
+ font-size: 12pt;
+ font-family: serif;
+ font-variant: small-caps;
+}
+
+.categorytitle {
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #000000;
+}
+
+.leftbox {
+ vertical-align: top;
+ padding: 0px;
+ margin: 0px;
+ width: 30%;
+}
+
+.rightbox {
+ vertical-align: top;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 20px;
+ padding-right: 0px;
+}
+
+.category_info_table {
+ border-spacing: 0px;
+ padding-bottom: 6px;
+}
+
+body {
+ padding: 0px;
+ margin: 0px;
+}
+
+
+.newreferendum table {
+ width: 100%;
+}
+
+
+.newreferendum table tr td:first-child {
+ white-space: nowrap;
+}
+
+.newreferendum table tr td:last-child {
+ width: 100%;
+}
+
+.newreferendum table textarea {
+ width: 100%;
+ height: 400px;
+}
+
+.copyright {
+ float: right;
+}
+
+.view_categories > dl > dt:first-child + dd {
+ margin-bottom: 36px;
+}
+
+.view_categories > dl > dd {
+ width: 80em;
+}

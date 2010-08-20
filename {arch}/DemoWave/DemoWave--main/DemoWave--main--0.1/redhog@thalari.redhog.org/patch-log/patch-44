@@ -1,0 +1,15 @@
+Revision: DemoWave--main--0.1--patch-44
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 00:09:45 CET 2006
+Standard-date: 2006-11-07 23:09:45 GMT
+New-files: dbinterface/.arch-ids/globalvotations.php.id
+    dbinterface/globalvotations.php
+    views/.arch-ids/searchvotationsglobal.php.id
+    views/searchvotationsglobal.php
+Modified-files: dbinterface/votations.php index.php
+    views/menu.php views/searchvotations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-44
+Summary: Added a global search function
+Keywords: 
+

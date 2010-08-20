@@ -1,0 +1,14 @@
+Revision: DemoWave--main--0.1--patch-7
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Sep 20 12:13:45 CEST 2006
+Standard-date: 2006-09-20 10:13:45 GMT
+New-files: dbinterface/.arch-ids/category.php.id
+    dbinterface/category.php
+    views/.arch-ids/category.php.id views/category.php
+Modified-files: dbinterface/save_new_votation.php
+    dbinterface/subcategories.php demowave.sql index.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-7
+Summary: Added info on the current category
+Keywords: 
+

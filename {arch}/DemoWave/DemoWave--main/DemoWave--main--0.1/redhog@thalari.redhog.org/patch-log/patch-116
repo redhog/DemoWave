@@ -1,0 +1,17 @@
+Revision: DemoWave--main--0.1--patch-116
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Feb 17 17:44:07 CET 2008
+Standard-date: 2008-02-17 16:44:07 GMT
+New-files: .arch-ids/demowave.initial-data.sql.id
+    .arch-ids/demowave.tables.sql.id
+    .arch-ids/demowave.views.sql.id
+    demowave.initial-data.sql demowave.tables.sql
+    demowave.views.sql
+Removed-files: .arch-ids/demowave.sql.id demowave.sql
+Modified-files: dbinterface/graph.php help/index.en.html
+    help/index.sv.html views/export/graph.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-116
+Summary: Vote area calculation bug fixes, graphing bug fixes
+Keywords: 
+

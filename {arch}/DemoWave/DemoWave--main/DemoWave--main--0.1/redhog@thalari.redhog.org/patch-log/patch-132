@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-132
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Feb 15 17:57:22 CET 2009
+Standard-date: 2009-02-15 16:57:22 GMT
+Modified-files: view.css views/ui.php
+    views/ui/categories.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-132
+Summary: Better layout of the categories list
+Keywords: 
+

@@ -1,0 +1,14 @@
+Revision: DemoWave--main--0.1--patch-38
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov  6 03:41:09 CET 2006
+Standard-date: 2006-11-06 02:41:09 GMT
+Modified-files: dbinterface/category.php
+    dbinterface/save_new_votation.php
+    dbinterface/save_votations_vote.php
+    dbinterface/votations.php login.php utils.php
+    views/votations.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-38
+Summary: Fixed handling of addition of votations aswell as a bug concerning vote casting
+Keywords: 
+

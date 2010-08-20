@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-1
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Sep 15 18:25:57 CEST 2006
+Standard-date: 2006-09-15 16:25:57 GMT
+Modified-files: demowave.demo.sql demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-1
+Summary: Added a votation_category as a VIEW
+Keywords: 
+

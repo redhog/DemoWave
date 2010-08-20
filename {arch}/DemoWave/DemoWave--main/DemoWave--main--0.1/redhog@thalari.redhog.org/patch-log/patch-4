@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-4
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Tue Sep 19 11:33:45 CEST 2006
+Standard-date: 2006-09-19 09:33:45 GMT
+Modified-files: views/votation.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-4
+Summary: Changed so the type of a category is shown as text, not number, in the votation over it
+Keywords: 
+

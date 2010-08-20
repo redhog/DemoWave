@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-78
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Nov 16 19:56:27 CET 2006
+Standard-date: 2006-11-16 18:56:27 GMT
+Modified-files: dbinterface/privs.php
+    dbinterface/save_users.php dbinterface/users.php
+    demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-78
+Summary: Cleaned up the privs/user_enabled management
+Keywords: 
+

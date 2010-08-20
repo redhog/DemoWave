@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-66
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Nov 11 15:23:14 CET 2006
+Standard-date: 2006-11-11 14:23:14 GMT
+Modified-files: help/index.en.html
+    locale/sv/LC_MESSAGES/demowave.po utils.php
+    views/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-66
+Summary: Cosmetic changes
+Keywords: 
+

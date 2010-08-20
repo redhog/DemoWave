@@ -1,0 +1,106 @@
+span.help_annotation .help {
+ display: none;
+}
+
+span.help_annotation:hover .help {
+ display: inline;
+ position: fixed;
+/* margin-top: -1em; */
+}
+
+.help {
+ text-decoration: none;
+ font-weight: bold;
+/* font-size: 8pt; */
+ color: #00aa00;
+ background: #ffffff;
+ border-color: #00aa00;
+ border-style: solid;
+ border-width: 1px;
+}
+
+h1, h2, h3, h4, dt {
+ margin-top: 12px;
+ font-family: serif;
+ font-variant: small-caps;
+}
+
+h1, h2, h3,
+.heading_collapsed>*, dt>* {
+ border-bottom-style: solid;
+ border-bottom-color: #000000;
+}
+
+.heading_collapsed, dt {
+ border-bottom-style: none;
+}
+
+h1, h1.heading_collapsed>* {
+ font-size: 14pt;
+ border-bottom-width: 2px;
+}
+
+h2, h2.heading_collapsed>*, dt>* {
+ font-size: 12pt;
+ border-bottom-width: 1px;
+}
+
+h3, h3.heading_collapsed>* {
+ font-size: 10pt;
+ border-bottom-width: 1px;
+}
+
+h4, h4.heading_collapsed>* {
+ font-size: 10pt;
+}
+
+th {
+ vertical-align: top;
+ text-align: left;
+}
+
+td {
+ vertical-align: top;
+ text-align: left;
+}
+
+
+input {
+ border-style: solid;
+ border-width: 1px;
+ border-color: #000000;
+}
+
+select {
+ border-style: solid;
+ border-width: 1px;
+ border-color: #000000;
+}
+
+textarea {
+ border-style: solid;
+ border-width: 1px;
+ border-color: #000000;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+dt a {
+ text-decoration: none;
+}
+
+dt {
+  margin-left: 0pt;
+}
+
+dd {
+  margin-top: 6px;
+  margin-left: 0pt;
+}
+
+dl dl {
+  margin-left: 40pt;
+}

@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-72
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 13 01:01:18 CET 2006
+Standard-date: 2006-11-13 00:01:18 GMT
+Modified-files: dbinterface/login.php
+    dbinterface/save_register.php dbinterface/save_user.php
+    demowave.sql
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-72
+Summary: Changed password storage to md5 from plain
+Keywords: 
+

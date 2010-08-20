@@ -1,0 +1,11 @@
+Revision: DemoWave--main--0.1--patch-14
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Sep 22 14:21:54 CEST 2006
+Standard-date: 2006-09-22 12:21:54 GMT
+Modified-files: dbinterface/votations.php demowave.sql
+    views/decisions.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-14
+Summary: Added calculation of completion dates
+Keywords: 
+

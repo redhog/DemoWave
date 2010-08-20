@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-112
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 27 19:21:49 CET 2006
+Standard-date: 2006-11-27 18:21:49 GMT
+Modified-files: dbinterface/law.php law-editor.css
+    views/ui/category.menu.php views/ui/law.php
+    views/ui/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-112
+Summary: Added functionality to view diffs for changes of laws
+Keywords: 
+

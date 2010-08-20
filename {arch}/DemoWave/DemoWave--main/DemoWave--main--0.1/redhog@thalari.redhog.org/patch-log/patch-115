@@ -1,0 +1,14 @@
+Revision: DemoWave--main--0.1--patch-115
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Jul 22 10:41:09 CEST 2007
+Standard-date: 2007-07-22 08:41:09 GMT
+New-files: dbinterface/.arch-ids/graph.php.id
+    dbinterface/graph.php
+    views/export/.arch-ids/graph.php.id
+    views/export/graph.php
+Modified-files: index.php views/ui/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-115
+Summary: Added graphing (export to graph) using http://quimby.gnus.org/circus/chart/chart-manual.php
+Keywords: 
+

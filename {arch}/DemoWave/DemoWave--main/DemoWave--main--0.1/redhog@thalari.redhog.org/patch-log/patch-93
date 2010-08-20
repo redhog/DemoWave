@@ -1,0 +1,19 @@
+Revision: DemoWave--main--0.1--patch-93
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Mon Nov 20 23:46:55 CET 2006
+Standard-date: 2006-11-20 22:46:55 GMT
+New-files: views/.arch-ids/export.php.id views/export.php
+    views/export/.arch-ids/=id
+    views/export/.arch-ids/category.php.id
+    views/export/.arch-ids/law.php.id
+    views/export/category.php views/export/law.php
+New-directories: views/export views/export/.arch-ids
+Modified-files: dbinterface/save_new_referendum.php
+    input/category.php input/globalreferendums.php
+    input/referendums.php input/users.php views/ui.php
+    views/ui/law.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-93
+Summary: Added export to xml for laws
+Keywords: 
+

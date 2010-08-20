@@ -1,0 +1,10 @@
+Revision: DemoWave--main--0.1--patch-121
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sat Jan 31 10:28:25 CET 2009
+Standard-date: 2009-01-31 09:28:25 GMT
+Modified-files: list.css views/ui/listreferendums.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-121
+Summary: Special message for empty tables
+Keywords: 
+

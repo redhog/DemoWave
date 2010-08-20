@@ -1,0 +1,26 @@
+Revision: DemoWave--main--0.1--patch-53
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Thu Nov  9 23:32:01 CET 2006
+Standard-date: 2006-11-09 22:32:01 GMT
+New-files: .arch-ids/compiletranslations.sh.id
+    compiletranslations.sh locale/.arch-ids/=id
+    locale/.arch-ids/demowave.pot.id locale/demowave.pot
+    locale/sv_SE/.arch-ids/=id
+    locale/sv_SE/LC_MESSAGES/.arch-ids/=id
+    locale/sv_SE/LC_MESSAGES/.arch-ids/demowave.po.id
+    locale/sv_SE/LC_MESSAGES/demowave.po
+New-directories: locale locale/.arch-ids locale/sv_SE
+    locale/sv_SE/.arch-ids locale/sv_SE/LC_MESSAGES
+    locale/sv_SE/LC_MESSAGES/.arch-ids
+Modified-files: help/index.html index.php utils.php
+    views/category.php views/categoryinfo.php views/law.php
+    views/listreferendums.php views/login.php
+    views/logout.php views/menu.php views/newreferendum.php
+    views/register.php views/searchreferendums.php
+    views/searchreferendumsglobal.php
+    views/subcategories.php views/user.php views/users.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-53
+Summary: Gettextized the whole thingie. Unfourtunately there's some kind of bug in php gettext, so it just doesn't translate anything...
+Keywords: 
+

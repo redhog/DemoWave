@@ -1,0 +1,160 @@
+ul.law_contents {
+ font-size: 10pt;
+ font-family: serif;
+ font-variant: small-caps;
+}
+
+div.law {
+ padding-left: 4em;
+}
+
+div.law_0 {
+ padding-left: 0px;
+ border-color: #ff0000;
+}
+
+div.law_1 {
+ padding-left: 0px;
+ border-color: #00ff00;
+}
+
+div.law_new {
+ color: #008800;
+}
+
+div.law_new * {
+ color: #008800;
+}
+
+div.law_orig {
+ color: #880000;
+}
+
+div.law_orig * {
+ color: #880000;
+}
+
+input.head_input {
+ border: #000000 solid 1px;
+}
+
+.law_text {
+ width: 100%;
+}
+
+.law_text textarea {
+ width: 100%;
+}
+
+.law_head * {
+ border-style: none;
+ background: inherit;
+ color: inherit;
+ text-align: inherit;
+ font: inherit;
+}
+
+.law_head {
+ width: 100%;
+ border-style: none;
+ background: #ffffff;
+ color: #000000;
+ text-align: left;
+}
+
+.law_edit_head {
+ padding: 0px;
+ margin: 0px;
+}
+
+.law_head_deleted {
+ color: #888888;
+}
+
+.law_head_1 {
+ font-size: 14pt;
+ font-family: serif;
+ font-variant: small-caps;
+ border-bottom: solid 2px #cccccc;
+}
+
+.law_head_2 {
+ font-size: 12pt;
+ font-family: serif;
+ font-variant: small-caps;
+ border-bottom: solid 1px #cccccc;
+}
+
+.law_head_3 {
+ font-size: 10pt;
+ font-family: serif;
+ font-variant: small-caps;
+ border-bottom: solid 1px #cccccc;
+}
+
+.law_head_4 {
+ font-size: 8pt;
+ font-family: serif;
+ font-variant: small-caps;
+ border-bottom: solid 1px #cccccc;
+}
+
+div.law_info {
+ background: #cccccc;
+ border-style: solid;
+ border-width: 1px;
+ border-color: #000000;
+ font-size: 8pt;
+ float: right;
+}
+
+.law_0 div.law_info {
+}
+
+.law_1 div.law_info {
+ margin-top: -2pt;
+}
+
+.law_2 div.law_info {
+ margin-top: -6pt;
+}
+
+.law_edit_insert {
+ height: 10px;
+ padding: 0px;
+ margin: 0px;
+ width: 100%;
+ color: #ffffff;
+ background: #ffffff;
+ border-style: none;
+}
+
+.law_edit_insert {
+ border: #ffffff solid 1px;
+}
+
+.law_edit_insert:hover {
+ border: #000000 solid 1px;
+ cursor: n-resize;
+}
+
+.law_edit_edit: {
+ border: #ffffff solid 1px;
+}
+
+.law_edit_edit:hover {
+ border: #000000 solid 1px;
+ cursor: text;
+}
+
+.law_edit_cancel {
+ font-size: 8pt;
+ border: #880088 solid 1px;
+ color: #880088;
+}
+
+.law_edit_delete {
+ font-size: 8pt;
+ border: #880000 solid 1px;
+ color: #880000;
+}

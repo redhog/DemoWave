@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-10 15:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: utils.php:79
+msgid "Unknown sorting key"
+msgstr ""
+
+#: utils.php:96
+#, php-format
+msgid "<tr><td></td><td>%s</td></tr>"
+msgstr ""
+
+#: utils.php:98
+#, php-format
+msgid "<tr><td>%s:</td><td>%s</td></tr>"
+msgstr ""
+
+#: utils.php:133
+msgid "Unknown type for drawSearchField"
+msgstr ""
+
+#: utils.php:139
+msgid "First"
+msgstr ""
+
+#: utils.php:140
+msgid "Previous"
+msgstr ""
+
+#: utils.php:141
+msgid "Next"
+msgstr ""
+
+#: utils.php:142
+msgid "Last"
+msgstr ""
+
+#: utils.php:160
+#, php-format
+msgid "<div class='nextprevpage'>"
+msgstr ""
+
+#: utils.php:161
+#, php-format
+msgid " <span class='prevpage'>"
+msgstr ""
+
+#: utils.php:162 utils.php:165
+#, php-format
+msgid "  %s %s"
+msgstr ""
+
+#: utils.php:163 utils.php:166
+#, php-format
+msgid " </span>"
+msgstr ""
+
+#: utils.php:164
+#, php-format
+msgid " <span class='nextpage'>"
+msgstr ""
+
+#: utils.php:167
+#, php-format
+msgid "</div>"
+msgstr ""
+
+#: views/categoryinfo.php:5 views/categoryinfo.php:6
+msgid "Type"
+msgstr ""
+
+#: views/categoryinfo.php:6 views/newreferendum.php:28
+#: views/categoryinfo.php:7
+msgid "Breakpoint"
+msgstr ""
+
+#: views/categoryinfo.php:13 views/categoryinfo.php:14
+msgid "Show"
+msgstr ""
+
+#: views/categoryinfo.php:14 views/categoryinfo.php:15
+msgid "Current laws"
+msgstr ""
+
+#: views/categoryinfo.php:15 views/listreferendums.php:7
+#: views/listreferendums.php:13 views/menu.php:16 views/categoryinfo.php:16
+msgid "Referendums"
+msgstr ""
+
+#: views/categoryinfo.php:17 views/categoryinfo.php:18
+msgid "Description"
+msgstr ""
+
+#: views/listreferendums.php:7 views/listreferendums.php:11
+msgid "Decisions"
+msgstr ""
+
+#: views/listreferendums.php:7 views/listreferendums.php:15
+msgid "Rejected proposals"
+msgstr ""
+
+#: views/listreferendums.php:27 views/searchreferendums.php:15
+#: views/searchreferendumsglobal.php:12 views/users.php:21 views/users.php:50
+msgid "Id"
+msgstr ""
+
+#: views/listreferendums.php:28 views/searchreferendums.php:21
+#: views/searchreferendumsglobal.php:16
+msgid "Title"
+msgstr ""
+
+#: views/listreferendums.php:29 views/searchreferendums.php:27
+#: views/searchreferendumsglobal.php:20
+msgid "Started"
+msgstr ""
+
+#: views/listreferendums.php:32 views/listreferendums.php:38
+#: views/searchreferendums.php:33 views/searchreferendumsglobal.php:24
+msgid "Estimate"
+msgstr ""
+
+#: views/listreferendums.php:32 views/listreferendums.php:36
+#: views/searchreferendums.php:35 views/searchreferendumsglobal.php:26
+msgid "Passed"
+msgstr ""
+
+#: views/listreferendums.php:32 views/listreferendums.php:40
+#: views/searchreferendums.php:37 views/searchreferendumsglobal.php:28
+msgid "Rejected"
+msgstr ""
+
+#: views/listreferendums.php:42 views/searchreferendums.php:16
+#: views/searchreferendumsglobal.php:13
+msgid "Total"
+msgstr ""
+
+#: views/listreferendums.php:43 views/searchreferendums.php:22
+#: views/searchreferendumsglobal.php:17
+msgid "Current"
+msgstr ""
+
+#: views/listreferendums.php:44 views/searchreferendums.php:28
+#: views/searchreferendumsglobal.php:21 views/users.php:29 views/users.php:54
+msgid "Vote"
+msgstr ""
+
+#: views/listreferendums.php:63 views/listreferendums.php:69
+msgid "1 Yes"
+msgstr ""
+
+#: views/listreferendums.php:64 views/listreferendums.php:70
+msgid "0 No vote"
+msgstr ""
+
+#: views/listreferendums.php:65 views/listreferendums.php:71
+msgid "-1 No"
+msgstr ""
+
+#: views/listreferendums.php:82
+#, php-format
+msgid "Action: Add category %s<br />"
+msgstr ""
+
+#: views/listreferendums.php:83
+#, php-format
+msgid "For referendums of type: %s<br />"
+msgstr ""
+
+#: views/listreferendums.php:84
+#, php-format
+msgid "Description: %s<br />"
+msgstr ""
+
+#: views/listreferendums.php:86
+msgid "type"
+msgstr ""
+
+#: views/listreferendums.php:89
+#, php-format
+msgid "Action: Remove category %s<br />"
+msgstr ""
+
+#: views/listreferendums.php:98
+#, php-format
+msgid ""
+"<h3>%s: %s</h3>\n"
+"%s"
+msgstr ""
+
+#: views/listreferendums.php:103
+#, php-format
+msgid "<h3>%s: (Removed)</h3>"
+msgstr ""
+
+#: views/login.php:8
+#, php-format
+msgid "<tr><td>Username:</td><td>%s</td></tr>"
+msgstr ""
+
+#: views/login.php:10
+#, php-format
+msgid "<tr><td>Password:</td><td>%s</td></tr>"
+msgstr ""
+
+#: views/menu.php:10
+msgid "My settings"
+msgstr ""
+
+#: views/menu.php:13
+msgid "Account management"
+msgstr ""
+
+#: views/menu.php:19 views/searchreferendums.php:42
+#: views/searchreferendumsglobal.php:32
+msgid "Search"
+msgstr ""
+
+#: views/menu.php:22 views/logout.php:7
+msgid "Log out"
+msgstr ""
+
+#: views/menu.php:25 views/register.php:24
+msgid "Register"
+msgstr ""
+
+#: views/menu.php:28 views/login.php:1 views/login.php:14
+msgid "Log in"
+msgstr ""
+
+#: views/menu.php:30
+msgid "Help"
+msgstr ""
+
+#: views/newreferendum.php:10
+msgid "Add/remove category"
+msgstr ""
+
+#: views/newreferendum.php:12
+msgid "Add category"
+msgstr ""
+
+#: views/newreferendum.php:13
+msgid "Remove category"
+msgstr ""
+
+#: views/newreferendum.php:17
+msgid "Unable to query for referendum types: "
+msgstr ""
+
+#: views/newreferendum.php:22
+msgid "Category type"
+msgstr ""
+
+#: views/newreferendum.php:32
+msgid "Path"
+msgstr ""
+
+#: views/newreferendum.php:36 views/newreferendum.php:40
+msgid "Text"
+msgstr ""
+
+#: views/newreferendum.php:63
+msgid "Add paragraph"
+msgstr ""
+
+#: views/newreferendum.php:64 views/newreferendum.php:68
+#: views/newreferendum.php:71
+msgid "Add field"
+msgstr ""
+
+#: views/newreferendum.php:67 views/newreferendum.php:90
+msgid "Change paragraph"
+msgstr ""
+
+#: views/newreferendum.php:70
+msgid "Remove paragraph"
+msgstr ""
+
+#: views/newreferendum.php:87
+msgid "Add new paragraph after"
+msgstr ""
+
+#: views/newreferendum.php:93
+msgid "Delete paragraph"
+msgstr ""
+
+#: views/newreferendum.php:113
+msgid "Create"
+msgstr ""
+
+#: views/searchreferendums.php:34 views/searchreferendumsglobal.php:25
+msgid "Status"
+msgstr ""
+
+#: views/searchreferendums.php:36 views/searchreferendumsglobal.php:27
+msgid "Active"
+msgstr ""
+
+#: views/searchreferendumsglobal.php:1
+msgid "Search for referendums in all categories"
+msgstr ""
+
+#: views/searchreferendumsglobal.php:36
+#, php-format
+msgid "Referendums found in %s categories"
+msgstr ""
+
+#: views/searchreferendumsglobal.php:41 views/category.php:3
+msgid "Category"
+msgstr ""
+
+#: views/searchreferendumsglobal.php:42
+msgid "Matches"
+msgstr ""
+
+#: views/user.php:8 views/register.php:7
+msgid "Name"
+msgstr ""
+
+#: views/user.php:10 views/users.php:51
+msgid "Username"
+msgstr ""
+
+#: views/user.php:11 views/users.php:25 views/users.php:52
+msgid "Given name"
+msgstr ""
+
+#: views/user.php:12 views/users.php:26 views/users.php:53
+msgid "Surname"
+msgstr ""
+
+#: views/user.php:15 views/register.php:16
+msgid "Password"
+msgstr ""
+
+#: views/user.php:17
+msgid "New password"
+msgstr ""
+
+#: views/user.php:18
+msgid "Retype password"
+msgstr ""
+
+#: views/users.php:22
+msgid "User name"
+msgstr ""
+
+#: views/users.php:30 views/users.php:33 views/users.php:67 views/users.php:72
+msgid "Enabled"
+msgstr ""
+
+#: views/users.php:30 views/users.php:33 views/users.php:68 views/users.php:73
+msgid "Disabled"
+msgstr ""
+
+#: views/users.php:32
+msgid "Manage"
+msgstr ""
+
+#: views/users.php:42
+#, php-format
+msgid "%s: Users"
+msgstr ""
+
+#: views/categoryinfo.php:3
+msgid "About this category"
+msgstr ""
+
+#: views/categorypath.php:2
+msgid "Current category: "
+msgstr ""
+
+#: views/categorypath.php:12
+msgid "Top"
+msgstr ""
+
+#: views/law.php:1
+msgid "Paragraphs"
+msgstr ""
+
+#: views/law.php:8
+msgid " Show paragraphs as of"
+msgstr ""
+
+#: views/law.php:11
+msgid "Select date"
+msgstr ""
+
+#: views/listreferendums.php:112
+msgid "Cast votes"
+msgstr ""
+
+#: views/logout.php:1
+msgid "Really log out?"
+msgstr ""
+
+#: views/newreferendum.php:3
+msgid "Add new referendum"
+msgstr ""
+
+#: views/newreferendum.php:22
+msgid "For referendums of type"
+msgstr ""
+
+#: views/register.php:1
+msgid "Register a new account"
+msgstr ""
+
+#: views/searchreferendums.php:3
+msgid "Search for referendums"
+msgstr ""
+
+#: views/subcategories.php:2
+msgid "Sub-categories"
+msgstr ""
+
+#: views/user.php:1
+msgid "Account settings"
+msgstr ""
+
+#: views/user.php:21
+msgid "Save"
+msgstr ""
+
+#: views/users.php:10
+msgid "Search for users"
+msgstr ""
+
+#: dbinterface/save_referendums_vote.php:10
+msgid "Unable to insert vote: "
+msgstr ""
+
+#: dbinterface/save_referendums_vote.php:11
+#, php-format
+msgid "Vote registered for referendum %s"
+msgstr ""

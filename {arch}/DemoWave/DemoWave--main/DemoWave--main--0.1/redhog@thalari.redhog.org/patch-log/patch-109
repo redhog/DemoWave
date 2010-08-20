@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-109
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Sun Nov 26 14:14:17 CET 2006
+Standard-date: 2006-11-26 13:14:17 GMT
+Modified-files: DTD/law/0.1.0.dtd help/demo-edit.law.xml
+    input/laweditor.php views/export/laweditor.php
+    views/ui/laweditor.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-109
+Summary: Added title to law referendum export/import
+Keywords: 
+

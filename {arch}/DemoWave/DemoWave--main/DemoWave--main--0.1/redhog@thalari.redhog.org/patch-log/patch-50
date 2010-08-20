@@ -1,0 +1,38 @@
+Revision: DemoWave--main--0.1--patch-50
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Wed Nov  8 23:46:19 CET 2006
+Standard-date: 2006-11-08 22:46:19 GMT
+Renamed-files: dbinterface/.arch-ids/globalvotations.php.id dbinterface/.arch-ids/globalreferendums.php.id
+    dbinterface/.arch-ids/save_new_votation.php.id dbinterface/.arch-ids/save_new_referendum.php.id
+    dbinterface/.arch-ids/save_votations_vote.php.id dbinterface/.arch-ids/save_referendums_vote.php.id
+    dbinterface/.arch-ids/votations.php.id dbinterface/.arch-ids/referendums.php.id
+    dbinterface/globalvotations.php dbinterface/globalreferendums.php
+    dbinterface/save_new_votation.php dbinterface/save_new_referendum.php
+    dbinterface/save_votations_vote.php dbinterface/save_referendums_vote.php
+    dbinterface/votations.php dbinterface/referendums.php
+    views/.arch-ids/listvotations.php.id views/.arch-ids/listreferendums.php.id
+    views/.arch-ids/newvotation.php.id views/.arch-ids/newreferendum.php.id
+    views/.arch-ids/searchvotations.php.id views/.arch-ids/searchreferendums.php.id
+    views/.arch-ids/searchvotationsglobal.php.id views/.arch-ids/searchreferendumsglobal.php.id
+    views/.arch-ids/votations.php.id views/.arch-ids/referendums.php.id
+    views/listvotations.php views/listreferendums.php
+    views/newvotation.php views/newreferendum.php
+    views/searchvotations.php views/searchreferendums.php
+    views/searchvotationsglobal.php views/searchreferendumsglobal.php
+    views/votations.php views/referendums.php
+Modified-files: dbinterface/category.php
+    dbinterface/globalreferendums.php dbinterface/law.php
+    dbinterface/referendums.php
+    dbinterface/save_new_referendum.php
+    dbinterface/save_referendums_vote.php
+    dbinterface/subcategories.php demowave.demo.sql
+    demowave.sql help/index.html index.php views/category.php
+    views/categoryinfo.php views/listreferendums.php
+    views/menu.php views/newreferendum.php
+    views/referendums.php views/searchreferendums.php
+    views/searchreferendumsglobal.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-50
+Summary: Renamed votations into referendums
+Keywords: 
+

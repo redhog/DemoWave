@@ -1,0 +1,12 @@
+Revision: DemoWave--main--0.1--patch-84
+Archive: redhog@thalari.redhog.org
+Creator: Egil Moeller <redhog@thalari.redhog.org>
+Date: Fri Nov 17 14:21:44 CET 2006
+Standard-date: 2006-11-17 13:21:44 GMT
+Modified-files: dbinterface/save_new_referendum.php
+    locale/sv/LC_MESSAGES/demowave.po
+    views/newreferendum.php
+New-patches: redhog@thalari.redhog.org/DemoWave--main--0.1--patch-84
+Summary: Cleanup of the code for adding paragraphs
+Keywords: 
+
