@@ -71,6 +71,9 @@ USA
      $node['sub'][$head] = array('sub' => array());
     $node['sub'][$head]['edit'] = $law;
    } else {
+    if (isset($node['sub'][$head]) && isset($node['sub'][$head]['edit'])) {
+     $law['edit'] = $node['sub'][$head]['edit'];
+    }
     $node['sub'][$head] = $law;
    }
   }
