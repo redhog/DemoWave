@@ -158,14 +158,22 @@ function drawSortHeader($sort, $sort_var, $key, $title, $help = '') {
  return "<th>{$header}</a></th>\n";
 };
 
-function drawSearchField($title, $name, $values, $type, $size = 10, $help = '') {
+function array_get($arr, $idx, $def) {
+ if (!isset($arr[$idx]))
+  return $def;
+ return $arr[$idx];
+}
 
- if ($type == 'bound')
-  $field = "<input name='{$name}_lower' value='{$_GET[$name . '_lower']}' type='text' size='{$size}' />-
-	    <input name='{$name}_upper' value='{$_GET[$name . '_upper']}' type='text' size='{$size}' />";
- else if ($type == 'match')
-  $field = "<input name='{$name}' value='{$_GET[$name]}' type='text' size='{$size}' />";
- else if ($type == 'list') {
+function drawSearchField($title, $name, $values, $type, $size = 10, $help = '') {
+ if ($type == 'bound') {
+  $lower = array_get($_GET, $name . "_lower", "");
+  $upper = array_get($_GET, $name . "_upper", "");
+  $field = "<input name='{$name}_lower' value='{$lower}' type='text' size='{$size}' />-
+	    <input name='{$name}_upper' value='{$upper}' type='text' size='{$size}' />";
+ } else if ($type == 'match') {
+  $value = array_get($_GET, $name, "");
+  $field = "<input name='{$name}' value='{$value}' type='text' size='{$size}' />";
+ } else if ($type == 'list') {
   $field = "\n";
   foreach($values as $label => $value) {
    $checked = '';

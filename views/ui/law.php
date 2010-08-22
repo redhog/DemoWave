@@ -81,23 +81,27 @@ USA
  }
 
  function drawLaw($level, $node) {
-  printf("<div class='law law_%s' id='law-%s'>\n", $level, $node['path']);
+  if (isset($node['path'])) {
+   printf("<div class='law law_%s' id='law-%s'>\n", $level, $node['path']);
 
-  if (isset($node['edit'])) {
-   printf("<div class='law_new'>\n");
-   drawLawParagraph($level, $node['edit']);
-   printf("</div>
-           <div class='law_orig'>
-          ");
-   drawLawParagraph($level, $node);
-   printf("</div>\n");
-  } else
-   drawLawParagraph($level, $node);
+   if (isset($node['edit'])) {
+    printf("<div class='law_new'>\n");
+    drawLawParagraph($level, $node['edit']);
+    printf("</div>
+	    <div class='law_orig'>
+	   ");
+    drawLawParagraph($level, $node);
+    printf("</div>\n");
+   } else
+    drawLawParagraph($level, $node);
+  }
 
   foreach ($node['sub'] as $subNode)
    drawLaw($level + 1, $subNode);
 
-  echo "</div>\n";
+  if (isset($node['path'])) {
+   echo "</div>\n";
+  }
  }
 ?>
 
@@ -106,7 +110,7 @@ USA
  $lawexporturl = '?' . queryString(queryConstruct(array('categoryview' => 'law', 'format' => 'export'), array(), array('law_')));
  echo "<h2 class='heading_collapsed'><a href='{$lawexporturl}'>" .  T_("Export to file") . "</a></h2>";
 
- if ($_GET['select_law_view']) {
+ if (isset($_GET['select_law_view']) && $_GET['select_law_view']) {
   $status = "heading_expanded";
   $args = queryString(queryConstruct(array(), array('select_law_view')));
  } else {
@@ -117,7 +121,7 @@ USA
  echo "<h2 class='{$status}'><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$title}</a></h2>";
 ?>
 <?php
- if ($_GET['select_law_view']) {
+ if (isset($_GET['select_law_view']) && $_GET['select_law_view']) {
   echo "<form method='get' enctype='multipart/url-encoded'>\n";
   foreach ($_GET as $key => $value)
    if (!beginsWith($key, 'law_'))
