@@ -38,7 +38,7 @@ USA
    $path = pg_escape_string($category_path_connect . $_POST['new_referendum_path']);
    $breakpoint = pg_escape_string($_POST['new_referendum_breakpoint']);
    $type = pg_escape_string($_POST['new_referendum_type']);
-   $text = pg_escape_string($_POST['new_referendum_text']);
+   $text = pg_escape_string(array_get($_POST, 'new_referendum_text', ''));
    $sql .= "insert into referendum_type_category (referendum, add, path, breakpoint, type, text)
 	     select
 	      currval('referendum_id_seq'),
@@ -249,7 +249,7 @@ USA
   $referendum = $row[0];
 
   if (in_array('vote', $_SESSION['privs'])) {
-   $sql = "select cast_vote('{$referendum}', '{$_SESSION['user']}', '{$value}');";
+   $sql = "select cast_vote('{$referendum}', '{$_SESSION['user']}', '1');";
    pg_query($dbconn, $sql)
     or die(T_('Unable to insert vote: ') . pg_last_error());
    $messages .= "<div>" . sprintf(T_("Vote registered for referendum %s"), $referendum) . "</div>";
