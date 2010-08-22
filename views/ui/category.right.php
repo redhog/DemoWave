@@ -21,7 +21,9 @@ USA
  <tr>
   <td><?php require('views/ui/categoryinfo.php'); ?></td>
  </tr>
- <tr>
-  <td><?php require('views/ui/navigation.php'); ?></td>
- </tr>
+ <?php if ($category_type != 'category') { ?>
+  <tr>
+   <td><?php require('views/ui/navigation.php'); ?></td>
+  </tr>
+ <?php } ?>
 </table>

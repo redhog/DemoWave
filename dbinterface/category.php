@@ -40,6 +40,8 @@ USA
     $_GET['categoryview'] = 'law';
    } else if ($category_type == 'category') {
     $_GET['categoryview'] = 'navigation';
+   } else if ($category_type == 'text') {
+    $_GET['categoryview'] = 'decisions';
    } else {
     $_GET['categoryview'] = 'referendums';
    }
