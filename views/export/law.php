@@ -22,7 +22,7 @@ USA
  header("Content-Disposition: attachment; filename=\"{$category_path}.law.xml\"");
 ?>
 <?php echo "<?xml version='1.0' encoding='UTF-8' ?>\n"; ?>
-<!DOCTYPE law PUBLIC "DemoWave//law//0.1.0" "/home/redhog/Projects/DemoWave/DemoWave/DTD/law/0.1.0.dtd">
+<!DOCTYPE law PUBLIC "DemoWave//law//0.1.0" "/home/redhog/Projects/DemoWave/DTD/law/0.1.0.dtd">
 <law>
  <?php
   function drawLawXML($level, $node) { 
@@ -33,10 +33,10 @@ USA
 
     $id = explode('.', $node['path']);
     $id = $id[count($id) - 1];
+    $id_attr = '';
     if (strstr($node['path'], ':') === false)
-     printf("<p id='%s'$delete>\n", $id);
-    else
-     printf("<p$delete>\n");
+     $id_attr = " id='$id'";
+    printf("<p changed_at='{$node['changed']}' changed_in='{$node['referendum']}' {$id_attr}{$delete}>\n");
 
     if ($node['add'] == 't')
      printf("<h>%s</h>\n%s\n",

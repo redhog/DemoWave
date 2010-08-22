@@ -6,3 +6,5 @@
 <!ELEMENT p ( #PCDATA | h | p )* >
 <!ATTLIST p delete CDATA #IMPLIED >
 <!ATTLIST p id NMTOKEN #IMPLIED >
+<!ATTLIST p changed_at CDATA #IMPLIED >
+<!ATTLIST p changed_in CDATA #IMPLIED >

@@ -72,11 +72,15 @@ USA
 	   $level, $level, $cls, $title, $level);
    }
 
+   $node_text = $node['text'];
+   // regexp change §para.para.para to a intra-document-link
+   // regexp change §document.document/para.para.para to an inter-document-link
+
    if ($node['add'] == 't')
     if ($node['title'] != '' || isset($_GET["law_show__referendum_list"]))
-     printf("<div class='law_text'>%s</div>", $node['text']);
+     printf("<div class='law_text'>%s</div>", $node_text);
     else
-     printf("<div class='law_text'><em>%s:</em> %s</div>", $node['path'], $node['text']);
+     printf("<div class='law_text'><em>%s:</em> %s</div>", $node['path'], $node_text);
   }
  }
 
