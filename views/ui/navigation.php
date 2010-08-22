@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
 <?php
- if ($category) {
+ if (count($subcategories) > 0) {
   ?>
    <h2><?php E_("Sub-categories"); ?></h2>
    <ul>

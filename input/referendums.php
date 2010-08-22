@@ -36,11 +36,11 @@ USA
      && !isset($_GET['referendum_search_status__0_list'])
      && !isset($_GET['referendum_search_status__-1_list']))
   {
-   if ($categoryview == 'referendums')
+   if ($_GET['categoryview'] == 'referendums')
     $_GET['referendum_search_status__0_list'] = 'on';
-   else if ($categoryview == 'decisions')
+   else if ($_GET['categoryview'] == 'decisions')
     $_GET['referendum_search_status__1_list'] = 'on';
-   else if ($categoryview == 'rejections')
+   else if ($_GET['categoryview'] == 'rejections')
     $_GET['referendum_search_status__-1_list'] = 'on';
   }
 

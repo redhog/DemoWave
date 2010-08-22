@@ -63,9 +63,11 @@ a.viewmenu_current {
 }
 
 .categorypath {
- font-size: 12pt;
+ display: block;
+ font-size: 9pt;
  font-family: serif;
  font-variant: small-caps;
+ margin-bottom: 10pt;
 }
 
 .categorytitle {
