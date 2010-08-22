@@ -68,7 +68,7 @@ USA
 
    if (isset($_GET["law_proposal"]) && $law['referendum'] == $_GET["law_proposal"]) {
     if (!isset($node['sub'][$head]))
-     $node['sub'][$head] = array('sub' => array());
+     $node['sub'][$head] = array('path' => $law['path'], 'sub' => array());
     $node['sub'][$head]['edit'] = $law;
    } else {
     if (isset($node['sub'][$head]) && isset($node['sub'][$head]['edit'])) {
