@@ -27,11 +27,11 @@ USA
                 && !isset($_POST["law_edit_continue"]))))) {
 
   $law_date_filter = '';
-  if ($_GET['law_date'] != '')
+  if (isset($_GET['law_date']) && $_GET['law_date'] != '')
    $law_date_filter = " and completed < '{$_GET['law_date']}'";
 
   $new_referendums_sql = "false";
-  if ($_GET["law_proposal"]) {
+  if (isset($_GET["law_proposal"]) && $_GET["law_proposal"]) {
     $proposal = pg_escape_string($_GET["law_proposal"]);
     $new_referendums_sql = "v.referendum = {$proposal}";
   }
@@ -66,7 +66,7 @@ USA
     $node = &$node['sub'][$item];
    }
 
-   if ($law['referendum'] == $_GET["law_proposal"]) {
+   if (isset($_GET["law_proposal"]) && $law['referendum'] == $_GET["law_proposal"]) {
     if (!isset($node['sub'][$head]))
      $node['sub'][$head] = array('sub' => array());
     $node['sub'][$head]['edit'] = $law;
