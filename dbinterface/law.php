@@ -32,8 +32,14 @@ USA
 
   $new_referendums_sql = "false";
   if (isset($_GET["law_proposal"]) && $_GET["law_proposal"]) {
-    $proposal = pg_escape_string($_GET["law_proposal"]);
-    $new_referendums_sql = "v.referendum = {$proposal}";
+    $proposals = explode(',', $_GET["law_proposal"]);
+    $proposals[] = $proposals[0]; // just to get SQL IN operator working...
+    $tmp = array();
+    foreach ($proposals as $proposal)
+     $tmp[] = pg_escape_string($proposal);
+    $proposals = $tmp;
+    $proposals_sql = implode(',', $proposals);
+    $new_referendums_sql = "v.referendum in ({$proposals_sql})";
   }
   $sql = "select -- distinct on (path)
 	   l.path, l.add, v.referendum, v.title as reftitle, v.completed as changed, l.title, l.text
@@ -66,7 +72,7 @@ USA
     $node = &$node['sub'][$item];
    }
 
-   if (isset($_GET["law_proposal"]) && $law['referendum'] == $_GET["law_proposal"]) {
+   if (isset($proposals) && in_array($law['referendum'], $proposals)) {
     if (!isset($node['sub'][$head]))
      $node['sub'][$head] = array('path' => $law['path'], 'sub' => array());
     $node['sub'][$head]['edit'] = $law;
