@@ -40,6 +40,7 @@ USA
   if ($category_type == 'law')
    $menu[] = drawSelectCategoryView('laweditor', T_('Edit'), array('law_proposal', 'law_date'));
   else if ($category_type == 'category') {
+   $menu[] = drawSelectCategoryView('navigation', T_('Subcategories'));
    $menu[] = drawSelectCategoryView('addsubcategory', T_('Create subcategory'));
    $menu[] = drawSelectCategoryView('delsubcategory', T_('Delete subcategory'));
   } else

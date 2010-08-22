@@ -36,10 +36,7 @@ USA
 
  function draw_category($category)
   {
-   if ($category['type'] == "law")
-     $args = queryString(queryConstruct(array('view' => 'category', 'category' => $category['path'], 'categoryview' => 'law'), array(), array('referendum_search_')));
-   else
-     $args = queryString(queryConstruct(array('view' => 'category', 'category' => $category['path']), array('categoryview'), array('referendum_search_')));
+   $args = queryString(queryConstruct(array('view' => 'category', 'category' => $category['path']), array('categoryview'), array('referendum_search_')));
    echo "<dt><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$category['title']}</a></dt>\n";
    echo "<dd>\n";
    echo "{$category['text']}";

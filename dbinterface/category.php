@@ -34,5 +34,16 @@ USA
     $category_breakpoint = $row[3];
     $category_text = $row[4];
    }
+
+  if ($_GET['categoryview'] == 'default') {
+   if ($category_type == 'law') {
+    $_GET['categoryview'] = 'law';
+   } else if ($category_type == 'category') {
+    $_GET['categoryview'] = 'navigation';
+   } else {
+    $_GET['categoryview'] = 'referendums';
+   }
+  }
+
  }
 ?>

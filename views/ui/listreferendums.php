@@ -182,7 +182,7 @@ USA
        }
       }
 
-     if ($categoryview == 'referendums')
+     if ($_GET['categoryview'] == 'referendums')
       {
     ?>
     <tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="submit" name="save_referendums_vote" value="<?php E_("Cast votes"); ?>"></td></tr>

@@ -19,9 +19,8 @@ USA
 */ ?>
 <?php
  if (!isset($_GET['categoryview']))
-  $_GET['categoryview'] = 'referendums';
- $categoryview = $_GET['categoryview'];
-
+  $_GET['categoryview'] = 'default';
+ 
  if (!isset($_GET['category']))
   $_GET['category'] = '';
  $category_path = $_GET['category'];
