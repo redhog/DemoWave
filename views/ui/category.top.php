@@ -17,11 +17,25 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
-<?php
- if ($_GET["category"] == '') {
-  echo "Top";
- } else {
-  $items = explode('.', $_GET["category"]);
-  echo $items[count($items)-1];
- }
-?>
+
+<span class="categorypath">
+ <?php
+  if ($_GET["category"] == '')
+   $items = array();
+  else
+   $items = explode('.', $_GET["category"]);
+
+  $res = array();
+  $subpath = array();
+
+  $args = queryString(queryConstruct(array('category' => ''), array('categoryview'), array('referendum_search_')));
+  $res = array("<span><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>" . T_("Top") . "</a></span>\n");
+  foreach ($items as $item)
+   {
+    $subpath[] = $item;
+    $args = queryString(queryConstruct(array('category' => implode('.', $subpath)), array('categoryview'), array('referendum_search_')));
+    $res[] = "<span><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$item}</a></span>\n";
+   }
+  echo implode(' &gt;&gt; ', $res);
+ ?>
+</span>

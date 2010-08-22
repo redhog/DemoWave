@@ -17,7 +17,11 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
-<?php
- if (!isset($_GET['categoryview'])) $_GET['categoryview'] = 'referendums';
- require("views/ui/{$_GET['categoryview']}.php");
-?>
+<table class="main">
+ <tr>
+  <td><?php require('views/ui/categoryinfo.php'); ?></td>
+ </tr>
+ <tr>
+  <td><?php require('views/ui/navigation.php'); ?></td>
+ </tr>
+</table>

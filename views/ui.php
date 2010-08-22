@@ -66,11 +66,22 @@ USA
     } else {
      ?>
       <table>
+       <?php
+	$viewtop = "views/ui/{$_GET['view']}.top.php";
+	if (file_exists($viewtop)) {
+         ?>
+          <tr>
+           <td colspan="2">
+            <?php
+	     require($viewtop);
+            ?>
+           </td>
+          </tr>
+         <?php
+	}
+       ?>
        <tr>
 	<td class="leftbox">
-	 <?php require("views/ui/{$_GET['view']}.left.php"); ?>
-	</td>
-	<td class="rightbox">
 	 <?php
 	  $viewmenu = "views/ui/{$_GET['view']}.menu.php";
 	  if (file_exists($viewmenu)) {
@@ -79,10 +90,15 @@ USA
 	   echo "</div>\n";
 	   echo "<div class='subview'>";
 	  }
-	  require("views/ui/{$_GET['view']}.right.php");
+          require("views/ui/{$_GET['view']}.left.php");
 	  if (file_exists($viewmenu)) {
 	   echo "</div>\n";
 	  }
+         ?>
+	</td>
+	<td class="rightbox">
+	 <?php
+	  require("views/ui/{$_GET['view']}.right.php");
 	 ?>
 	</td>
        </tr>

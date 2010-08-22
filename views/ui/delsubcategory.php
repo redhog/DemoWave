@@ -19,13 +19,28 @@ USA
 */ ?>
 <?php if (in_array('propose', $_SESSION['privs']) && $is_category) { ?>
  <form class="newreferendum" method="post" enctype="multipart/form-data">
-  <h2><?php E_("Add new referendum"); ?></h2>
+  <input type="hidden" name='new_referendum_add' value='false'>
+  <?php
+   $referendum_type_ids = array_values($referendum_types);
+   $referendum_random_type_id = $referendum_type_ids[0];
+  ?>
+  <input type="hidden" name='new_referendum_type' value='<?php echo $referendum_random_type_id; ?>'>
+  <input type="hidden" name='new_referendum_breakpoint' value='1 second'>
+
+  <h2><?php E_("Delete category"); ?></h2>
   <table>
    <?php
-    echo drawInputRow(T_("Referendum title"), "<input name='new_referendum_title' value='{$_POST["new_referendum_title"]}'>");
-    echo drawInputRow(T_("Text"),
-		       "<textarea name='new_referendum_text'></textarea>");
-    echo drawInputRow('', "<input name='new_referendum' type='submit' value='" . T_("Create") . "'>");
+    $referendum_subcategory_options = array();
+    foreach ($subcategories as $category) {
+     $referendum_subcategory_options[] = "<option value='{$category}'>{$category}</option>";
+    }
+    echo drawInputRow(T_("Category title"),
+		       "<select name='new_referendum_path'>" .
+		       implode('\n', $referendum_subcategory_options) .
+		       "</select>",
+		       'referendum-type');
+
+    echo drawInputRow('', "<input name='new_referendum' type='submit' value='" . T_("Delete category") . "'>");
    ?>
   </table>
  </form>

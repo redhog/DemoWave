@@ -21,6 +21,15 @@ USA
  if (   in_array('propose', $_SESSION['privs'])
      && $is_category
      && isset($_POST['new_referendum'])) {
+
+  if ($category_type == 'category') {
+   if ($_POST['new_referendum_add'] == 'true') {
+    $_POST['new_referendum_title'] = 'Create category ' . $_POST['new_referendum_path'];
+   } else {
+    $_POST['new_referendum_title'] = 'Delete category ' . $_POST['new_referendum_path'];
+   }
+  }
+
   $sql = "begin;
 	  insert into referendum (title, category) values ('{$_POST['new_referendum_title']}', '{$category_id}');
 	 ";

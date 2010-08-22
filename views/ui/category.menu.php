@@ -39,7 +39,10 @@ USA
  if (in_array('propose', $_SESSION['privs']) && $is_category)
   if ($category_type == 'law')
    $menu[] = drawSelectCategoryView('laweditor', T_('Edit'), array('law_proposal', 'law_date'));
-  else
+  else if ($category_type == 'category') {
+   $menu[] = drawSelectCategoryView('addsubcategory', T_('Create subcategory'));
+   $menu[] = drawSelectCategoryView('delsubcategory', T_('Delete subcategory'));
+  } else
    $menu[] = drawSelectCategoryView('newreferendum', T_('Propose text'));
 
  echo implode(' ', $menu);

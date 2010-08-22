@@ -160,7 +160,7 @@ USA
 		 T_($attr['type']),
 		 $attr['text']);
 	 else
-	  printf(T_("Action: Remove category %s<br />"), $attr['path']);
+	  printf(T_("Action: Delete category %s<br />"), $attr['path']);
 	} else if ($category_type == "text") {
 	   echo $attr['text'] . '<br />';
 	} else if ($category_type == "law") {
