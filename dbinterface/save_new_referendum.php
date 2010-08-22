@@ -248,6 +248,12 @@ USA
    or die('Unable to fetch id of new referendum: '. pg_last_error());
   $referendum = $row[0];
 
+  if (in_array('vote', $_SESSION['privs'])) {
+   $sql = "select cast_vote('{$referendum}', '{$_SESSION['user']}', '{$value}');";
+   pg_query($dbconn, $sql)
+    or die(T_('Unable to insert vote: ') . pg_last_error());
+   $messages .= "<div>" . sprintf(T_("Vote registered for referendum %s"), $referendum) . "</div>";
+  }
 
   $referendumurl = $_SERVER["SCRIPT_NAME"] . '?' .
 		   queryString(queryConstruct(array('view' => 'category',

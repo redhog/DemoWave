@@ -20,7 +20,7 @@ USA
 <?php if ($is_category) { ?>
 
 <?php
- if ($_GET['search_referendums_show']) {
+ if (array_get($_GET, 'search_referendums_show', '')) {
   $status = "heading_expanded";
   $args = queryString(queryConstruct(array(), array('search_referendums_show')));
  } else {
@@ -31,7 +31,7 @@ USA
  echo "<h2 class='{$status}'><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$title}</a></h2>";
 ?>
 <?php
- if ($_GET['search_referendums_show']) {
+ if (array_get($_GET, 'search_referendums_show', '')) {
   ?>
    <form action="<?php echo $_SERVER["SCRIPT_NAME"]; ?>" method="get" enctype="multipart/url-encoded">
     <?php
