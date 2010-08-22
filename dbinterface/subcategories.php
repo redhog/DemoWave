@@ -27,7 +27,7 @@ USA
    $rows = pg_query($dbconn, $sql)
     or die('Could query: ' . pg_last_error());
 
-   $categories = array('text' => '', 'title' => 'Top', 'path' => '', 'children' => array());
+   $categories = array('text' => '', 'title' => 'Top', 'path' => '', 'type' => 'category', 'children' => array());
    while ($row = pg_fetch_row($rows)) {
     $node = &$categories;
 

@@ -37,13 +37,13 @@ USA
  function draw_category($category)
   {
    $args = queryString(queryConstruct(array('view' => 'category', 'category' => $category['path']), array('categoryview'), array('referendum_search_')));
-   echo "<dt><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$category['title']}</a></dt>\n";
+   echo "<dt><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>{$category['title']} ({$category['type']})</a></dt>\n";
    echo "<dd>\n";
    echo "{$category['text']}";
    draw_category_list($category['children']);
    echo "</dd>\n";
   }
 
- draw_category_list(array_merge(array(array('title' => $categories['title'], 'text' => $categories['text'], 'path' => $categories['path'], 'children' => array())),
+ draw_category_list(array_merge(array(array('title' => $categories['title'], 'text' => $categories['text'], 'type' => $categories['type'], 'path' => $categories['path'], 'children' => array())),
 			      $categories['children']));
 ?>
