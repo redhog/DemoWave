@@ -46,7 +46,7 @@ USA
 		         and v.area > '0 second'
 			 {$law_date_filter})
                      or {$new_referendums_sql})
-	  order by path, completed desc";
+	  order by path, completed asc";
   $rows = pg_query($dbconn, $sql)
    or die('Uanble to query for paragraphs');
 
