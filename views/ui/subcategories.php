@@ -17,10 +17,14 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
-<?php
- if (count($subcategories) > 0) {
-  ?>
-   <?php require('views/ui/subcategories.php'); ?>
-  <?php
- }
-?>
+<h2><?php E_("Sub-categories"); ?></h2>
+<ul>
+ <?php
+
+  foreach ($subcategories as $category)
+   {
+    $args = queryString(queryConstruct(array('category' => $category_path_connect . $category), array('categoryview'), array('referendum_search_')));
+    echo "<li><a href='{$_SERVER["SCRIPT_NAME"]}?{$args}'>${category}</a></li>";
+   }
+ ?>
+</ul>

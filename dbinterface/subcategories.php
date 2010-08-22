@@ -35,7 +35,7 @@ USA
      $path = explode('.', $row[0]);
      for ($pos = 0; $pos < count($path); $pos++) {
       if (!array_key_exists($path[$pos], $node['children']))
-       $node['children'][$path[$pos]] = array('text' => '', title => $path[$pos], 'path' => implode('.', array_slice($path, 0, $pos + 1)), 'children' => array());
+       $node['children'][$path[$pos]] = array('text' => '', 'title' => $path[$pos], 'path' => implode('.', array_slice($path, 0, $pos + 1)), 'children' => array());
       $node = &$node['children'][$path[$pos]];
      }
     }

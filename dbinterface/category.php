@@ -39,7 +39,7 @@ USA
    if ($category_type == 'law') {
     $_GET['categoryview'] = 'law';
    } else if ($category_type == 'category') {
-    $_GET['categoryview'] = 'navigation';
+    $_GET['categoryview'] = 'subcategories';
    } else if ($category_type == 'text') {
     $_GET['categoryview'] = 'decisions';
    } else {

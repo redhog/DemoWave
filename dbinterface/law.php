@@ -75,35 +75,6 @@ USA
    }
   }
   
-
-/*
-  if ($_GET["law_proposal"]) {
-   $proposal = pg_escape_string($_GET["law_proposal"]);
-   $sql = "select
-            l.path, l.add, l.referendum, v.title as reftitle, now() as changed, l.title, l.text
-           from
-            referendum as v,
-            referendum_type_law as l
-           where     v.id = '{$proposal}'
-                 and l.referendum = v.id
-          ";
-
-   $rows = pg_query($dbconn, $sql)
-    or die('Uanble to query for proposal');
-   while ($row = pg_fetch_row($rows)) {
-    $change = array_combine($sql_names, $row);
-    $path = explode('.', $change['path']);
-
-    $node = &$laws;
-    foreach ($path as $item) {
-     if (!isset($node['sub'][$item]))
-      $node['sub'][$item] = array('sub' => array());
-     $node = &$node['sub'][$item];
-    }
-    $node['edit'] = $change;
-   }
-  }
-*/
   if (   $_GET['categoryview'] == 'laweditor'
       && !isset($_POST["law_edit_continue"])) {
    $_SESSION["laweditor"] = array('laws' => $laws, 'current' => 0);
