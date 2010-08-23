@@ -141,11 +141,14 @@ USA
  }
 ?>
 
+<table class="law_importexport">
+ <?php
+  $lawexporturl = '?' . queryString(queryConstruct(array('categoryview' => 'law', 'format' => 'export'), array(), array('law_')));
+  echo drawInputRow(T_("Export to file"), "<a href='{$lawexporturl}' target='demowave-export'>" . T_("Export") . "</a>");
+ ?>
+</table>
 
 <?php
- $lawexporturl = '?' . queryString(queryConstruct(array('categoryview' => 'law', 'format' => 'export'), array(), array('law_')));
- echo "<h2 class='heading_collapsed'><a href='{$lawexporturl}'>" .  T_("Export to file") . "</a></h2>";
-
  if (isset($_GET['select_law_view']) && $_GET['select_law_view']) {
   $status = "heading_expanded";
   $args = queryString(queryConstruct(array(), array('select_law_view')));
