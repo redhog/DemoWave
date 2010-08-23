@@ -66,23 +66,29 @@ USA
 						      'expanded_referendums' => $node['referendum']),
 						array(),
 						array('referendum_search_')));
+     printf("<div class='law_info law_info_%s'>",
+	    $this->referendumIntern($node['referendum']));
      if ($node['changed'] == 'infinity') {
-      printf("<div class='law_info law_info_%s'>
-	       Proposed in: <a href='%s'>%s: %s</a><br />
-	      </div>
+      printf("Proposed in: <a href='%s'>%s: %s</a><br />
 	     ",
-	     $this->referendumIntern($node['referendum']),
 	     $refurl, $node['referendum'], $node['reftitle']); 
      } else {
-      printf("<div class='law_info law_info_%s'>
-	       Last changed: <a href='%s'>%s</a><br />
-	       By: <a href='%s'>%s: %s</a><br />
-	      </div>
-	     ",
-	     $this->referendumIntern($node['referendum']),
-	     $dateurl, $node['changed'],
-	     $refurl, $node['referendum'], $node['reftitle']); 
+      if ($node['passed'] == 't') {
+       printf("Last changed: <a href='%s'>%s</a><br />
+               Changed by: <a href='%s'>%s: %s</a><br />
+ 	      ",
+	      $dateurl, $node['changed'],
+	      $refurl, $node['referendum'], $node['reftitle']);
+      } else {
+       printf("Rejected: <a href='%s'>%s</a><br />
+ 	       Proposed in: <a href='%s'>%s: %s</a><br />
+              ",
+	      $dateurl, $node['changed'],
+              $refurl, $node['referendum'], $node['reftitle']);
+      }
+
      }
+     printf("</div>");
     }
 
     if ($node['add'] != 't' || $node['title'] != '' || isset($_GET["law_show__referendum_list"])) {

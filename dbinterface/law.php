@@ -42,7 +42,7 @@ USA
     $new_referendums_sql = "v.referendum in ({$proposals_sql})";
   }
   $sql = "select -- distinct on (path)
-	   l.path, l.add, v.referendum, v.title as reftitle, v.completed as changed, l.title, l.text
+	   l.path, l.add, v.referendum, v.title as reftitle, v.completed as changed, v.area > '0 second' as passed, l.title, l.text
  	  from
 	   referendum_status as v,
 	   referendum_type_law as l
@@ -56,7 +56,7 @@ USA
   $rows = pg_query($dbconn, $sql)
    or die('Uanble to query for paragraphs');
 
-  $sql_names = array('path', 'add', 'referendum', 'reftitle', 'changed', 'title', 'text');
+  $sql_names = array('path', 'add', 'referendum', 'reftitle', 'changed', 'passed', 'title', 'text');
 
   $laws = array('sub' => array());
   while ($row = pg_fetch_row($rows)) {
