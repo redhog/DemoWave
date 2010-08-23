@@ -17,8 +17,22 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
+
 <?php
  class LawRenderer {
+  function LawRenderer() {
+   $this->referendum_intern_max = 0;
+   $this->referendum_interns = array();
+  }
+
+  function referendumIntern($referendum) {
+   if (!isset($this->referendum_interns[$referendum])) {
+    $this->referendum_interns[$referendum] = $this->referendum_intern_max;
+    $this->referendum_intern_max += 1;
+   }
+   return $this->referendum_interns[$referendum];
+  }
+
   function drawLawContentList($node) {
    if (isset($node['edit']))
     return $this->drawLawContentList($node['edit']);
@@ -52,13 +66,23 @@ USA
 						      'expanded_referendums' => $node['referendum']),
 						array(),
 						array('referendum_search_')));
-     printf("<div class='law_info'>
-	      Last changed: <a href='%s'>%s</a><br />
-	      By: <a href='%s'>%s: %s</a><br />
-	     </div>
-	    ",
-	    $dateurl, $node['changed'],
-	    $refurl, $node['referendum'], $node['reftitle']); 
+     if ($node['changed'] == 'infinity') {
+      printf("<div class='law_info law_info_%s'>
+	       Proposed in: <a href='%s'>%s: %s</a><br />
+	      </div>
+	     ",
+	     $this->referendumIntern($node['referendum']),
+	     $refurl, $node['referendum'], $node['reftitle']); 
+     } else {
+      printf("<div class='law_info law_info_%s'>
+	       Last changed: <a href='%s'>%s</a><br />
+	       By: <a href='%s'>%s: %s</a><br />
+	      </div>
+	     ",
+	     $this->referendumIntern($node['referendum']),
+	     $dateurl, $node['changed'],
+	     $refurl, $node['referendum'], $node['reftitle']); 
+     }
     }
 
     if ($node['add'] != 't' || $node['title'] != '' || isset($_GET["law_show__referendum_list"])) {

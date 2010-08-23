@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
 <?php
- $expanded_referendums = split(',', $_GET['expanded_referendums']);
+ $expanded_referendums = split(',', array_get($_GET, 'expanded_referendums', ''));
 
  if (!isset($_GET['referendum_page_start']))
    $_GET['referendum_page_start'] = 0;

@@ -129,13 +129,21 @@ USA
 			    T_("Discussion forum"));
 	}
 	if ($category_type == "law") {
+	 $proposals = array();
+	 if (isset($_GET["law_proposal"]) && $_GET["law_proposal"]) {
+	   $proposals = explode(',', $_GET["law_proposal"]);
+         }
+	 $proposals[] = $attr['referendum'];
+	 $proposals = implode(",", $proposals);
 	 $url = '?' . queryString(queryConstruct(array('categoryview' => 'law',
 						       'law_show__deleted_list' => 'on',
 						       'law_date' => $attr['completed'],
-						       'law_proposal' => $attr['referendum'])));
+						       'law_show__referendum_list' => '1',
+						       'law_proposal' => $proposals)));
 	 $links[] = sprintf("<a href='%s'>%s</a>\n",
 			    $url,
 			    T_("Law view"));
+
 	 $url = '?' . queryString(queryConstruct(array('categoryview' => 'laweditor',
 						       'law_proposal' => $attr['referendum'])));
 	 $links[] = sprintf("<a href='%s'>%s</a>\n",
