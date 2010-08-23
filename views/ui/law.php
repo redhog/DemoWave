@@ -18,93 +18,95 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA
 */ ?>
 <?php
- function drawLawContentList($node) {
-  if (isset($node['edit']))
-   return drawLawContentList($node['edit']);
-  $res = '';
-  if (isset($node['add']) && $node['title'] != '')
-   $res .= sprintf("<a href='#law-%s'>%s: %s</a>\n",
-	           $node['path'], $node['path'], $node['title']);
-  $childres = '';
-  foreach ($node['sub'] as $subNode) {
-   $subres = drawLawContentList($subNode);
-   if ($subres != '')
-    $childres .= "<li>\n{$subres}</li>\n";
-  }
-  if ($childres != '')
-   $res .= "<ul>\n{$childres}</ul>\n";
-  return $res;
- }
-
- function drawLawParagraph($level, $node) {
-  if (isset($node['add']) && ($node['add'] == 't' || $_GET["law_show__deleted_list"])) {
-   if (isset($_GET["law_show__referendum_list"])) {
-    $dateurl = '?' . queryString(queryConstruct(array('law_date' => $node['changed'],
-                                                      'law_proposal' => $node['referendum'])));
-    $refurl = '?' . queryString(queryConstruct(array('view' => 'category',
-						     'categoryview' => 'referendums',
-						     'referendum_search_status__1_list' => 'on',
-						     'referendum_search_status__0_list' => 'on',
-						     'referendum_search_status__-1_list' => 'on',
-						     'referendum_search_referendum_lower' => $node['referendum'],
-						     'referendum_search_referendum_upper' => $node['referendum'],
-						     'expanded_referendums' => $node['referendum']),
-					       array(),
-					       array('referendum_search_')));
-    printf("<div class='law_info'>
-	     Last changed: <a href='%s'>%s</a><br />
-	     By: <a href='%s'>%s: %s</a><br />
-	    </div>
-	   ",
-	   $dateurl, $node['changed'],
-	   $refurl, $node['referendum'], $node['reftitle']); 
+ class LawRenderer {
+  function drawLawContentList($node) {
+   if (isset($node['edit']))
+    return $this->drawLawContentList($node['edit']);
+   $res = '';
+   if (isset($node['add']) && $node['title'] != '')
+    $res .= sprintf("<a href='#law-%s'>%s: %s</a>\n",
+		    $node['path'], $node['path'], $node['title']);
+   $childres = '';
+   foreach ($node['sub'] as $subNode) {
+    $subres = $this->drawLawContentList($subNode);
+    if ($subres != '')
+     $childres .= "<li>\n{$subres}</li>\n";
    }
+   if ($childres != '')
+    $res .= "<ul>\n{$childres}</ul>\n";
+   return $res;
+  }
 
-   if ($node['add'] != 't' || $node['title'] != '' || isset($_GET["law_show__referendum_list"])) {
-    if ($node['add'] == 't') {
-     $title = sprintf(T_("%s: %s"), $node['path'], $node['title']);
-     $cls = 'law_head_added';
-    } else {
-     $title = sprintf(T_("Paragraph deleted: %s"), $node['path']);
-     $cls = 'law_head_deleted';
+  function drawLawParagraph($level, $node) {
+   if (isset($node['add']) && ($node['add'] == 't' || $_GET["law_show__deleted_list"])) {
+    if (isset($_GET["law_show__referendum_list"])) {
+     $dateurl = '?' . queryString(queryConstruct(array('law_date' => $node['changed'],
+						       'law_proposal' => $node['referendum'])));
+     $refurl = '?' . queryString(queryConstruct(array('view' => 'category',
+						      'categoryview' => 'referendums',
+						      'referendum_search_status__1_list' => 'on',
+						      'referendum_search_status__0_list' => 'on',
+						      'referendum_search_status__-1_list' => 'on',
+						      'referendum_search_referendum_lower' => $node['referendum'],
+						      'referendum_search_referendum_upper' => $node['referendum'],
+						      'expanded_referendums' => $node['referendum']),
+						array(),
+						array('referendum_search_')));
+     printf("<div class='law_info'>
+	      Last changed: <a href='%s'>%s</a><br />
+	      By: <a href='%s'>%s: %s</a><br />
+	     </div>
+	    ",
+	    $dateurl, $node['changed'],
+	    $refurl, $node['referendum'], $node['reftitle']); 
     }
-    printf(T_("<h%s class='law_head law_head_%s %s'>%s</h%s>\n"),
-	   $level, $level, $cls, $title, $level);
+
+    if ($node['add'] != 't' || $node['title'] != '' || isset($_GET["law_show__referendum_list"])) {
+     if ($node['add'] == 't') {
+      $title = sprintf(T_("%s: %s"), $node['path'], $node['title']);
+      $cls = 'law_head_added';
+     } else {
+      $title = sprintf(T_("Paragraph deleted: %s"), $node['path']);
+      $cls = 'law_head_deleted';
+     }
+     printf(T_("<h%s class='law_head law_head_%s %s'>%s</h%s>\n"),
+	    $level, $level, $cls, $title, $level);
+    }
+
+    $node_text = $node['text'];
+    // regexp change §para.para.para to a intra-document-link
+    // regexp change §document.document/para.para.para to an inter-document-link
+
+    if ($node['add'] == 't')
+     if ($node['title'] != '' || isset($_GET["law_show__referendum_list"]))
+      printf("<div class='law_text'>%s</div>", $node_text);
+     else
+      printf("<div class='law_text'><em>%s:</em> %s</div>", $node['path'], $node_text);
+   }
+  }
+
+  function drawLaw($level, $node) {
+   if (isset($node['path'])) {
+    printf("<div class='law law_%s' id='law-%s'>\n", $level, $node['path']);
+
+    if (isset($node['edit'])) {
+     printf("<div class='law_new'>\n");
+     $this->drawLawParagraph($level, $node['edit']);
+     printf("</div>
+	     <div class='law_orig'>
+	    ");
+     $this->drawLawParagraph($level, $node);
+     printf("</div>\n");
+    } else
+     $this->drawLawParagraph($level, $node);
    }
 
-   $node_text = $node['text'];
-   // regexp change §para.para.para to a intra-document-link
-   // regexp change §document.document/para.para.para to an inter-document-link
+   foreach ($node['sub'] as $subNode)
+    $this->drawLaw($level + 1, $subNode);
 
-   if ($node['add'] == 't')
-    if ($node['title'] != '' || isset($_GET["law_show__referendum_list"]))
-     printf("<div class='law_text'>%s</div>", $node_text);
-    else
-     printf("<div class='law_text'><em>%s:</em> %s</div>", $node['path'], $node_text);
-  }
- }
-
- function drawLaw($level, $node) {
-  if (isset($node['path'])) {
-   printf("<div class='law law_%s' id='law-%s'>\n", $level, $node['path']);
-
-   if (isset($node['edit'])) {
-    printf("<div class='law_new'>\n");
-    drawLawParagraph($level, $node['edit']);
-    printf("</div>
-	    <div class='law_orig'>
-	   ");
-    drawLawParagraph($level, $node);
-    printf("</div>\n");
-   } else
-    drawLawParagraph($level, $node);
-  }
-
-  foreach ($node['sub'] as $subNode)
-   drawLaw($level + 1, $subNode);
-
-  if (isset($node['path'])) {
-   echo "</div>\n";
+   if (isset($node['path'])) {
+    echo "</div>\n";
+   }
   }
  }
 ?>
@@ -143,9 +145,11 @@ USA
   echo "</table>\n";
   echo "</form>\n";
  }
+
+ $renderer = new LawRenderer();
 ?>
 
 <h2><?php E_("Contents"); ?></h2>
-<?php echo drawLawContentList($laws); ?>
+<?php echo $renderer->drawLawContentList($laws); ?>
 
-<?php drawLaw(0, $laws); ?>
+<?php $renderer->drawLaw(0, $laws); ?>
