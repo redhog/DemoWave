@@ -75,7 +75,9 @@ USA
    if (isset($proposals) && in_array($law['referendum'], $proposals)) {
     if (!isset($node['sub'][$head]))
      $node['sub'][$head] = array('path' => $law['path'], 'sub' => array());
-    $node['sub'][$head]['edit'] = $law;
+    if (!isset($node['sub'][$head]['edit']))
+     $node['sub'][$head]['edit'] = array();
+    $node['sub'][$head]['edit'][] = $law;
    } else {
     if (isset($node['sub'][$head]) && isset($node['sub'][$head]['edit'])) {
      $law['edit'] = $node['sub'][$head]['edit'];

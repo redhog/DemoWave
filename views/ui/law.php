@@ -35,7 +35,7 @@ USA
 
   function drawLawContentList($node) {
    if (isset($node['edit']))
-    return $this->drawLawContentList($node['edit']);
+    return $this->drawLawContentList($node['edit'][0]);
    $res = '';
    if (isset($node['add']) && $node['title'] != '')
     $res .= sprintf("<a href='#law-%s'>%s: %s</a>\n",
@@ -130,11 +130,12 @@ USA
     printf("<div class='law law_%s' id='law-%s'>\n", $level, $node['path']);
 
     if (isset($node['edit'])) {
-     printf("<div class='law_new'>\n");
-     $this->drawLawParagraph($level, $node['edit']);
-     printf("</div>
-	     <div class='law_orig'>
-	    ");
+     foreach ($node['edit'] as $edit) {
+      printf("<div class='law_new'>\n");
+      $this->drawLawParagraph($level, $edit);
+      printf("</div>");
+     }
+     printf("<div class='law_orig'>");
      $this->drawLawParagraph($level, $node);
      printf("</div>\n");
     } else
@@ -180,7 +181,7 @@ USA
   echo "<tr>" . drawSearchField(T_("Show differences introduced by"), 'law_proposal', false, 'match') . "</tr>\n";
   echo "<tr>" . drawSearchField(T_("Show"), 'law_show',
 				array(T_("Deleted paragraphs") => 'deleted',
-				      T_("Referendum") => 'referendum'
+				      T_("Last change") => 'referendum'
 				     ),
 				'list') . "</tr>\n";
   echo drawInputRow("",
