@@ -78,7 +78,6 @@ USA
 		"    where " . $sql_where . $sql_fud_where . $sql_type_where .
                 "    order by i.referendum) as v" .
                 " where " . $search;
-
    $sql = "select count(*) from (select distinct on (referendum) referendum " . $sql_fetch . " group by referendum) as r";
    $row = pg_fetch_row(pg_query($dbconn, $sql))
     or die('Could query: ' . pg_last_error());

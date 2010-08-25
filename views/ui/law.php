@@ -99,8 +99,18 @@ USA
       $title = sprintf(T_("Paragraph deleted: %s"), $node['path']);
       $cls = 'law_head_deleted';
      }
-     printf(T_("<h%s class='law_head law_head_%s %s'>%s</h%s>\n"),
-	    $level, $level, $cls, $title, $level);
+
+     $refurl = '?' . queryString(queryConstruct(array('view' => 'category',
+						      'categoryview' => 'referendums',
+						      'referendum_search_status__1_list' => 'on',
+						      'referendum_search_status__0_list' => 'on',
+						      'referendum_search_status__-1_list' => 'on',
+						      'referendum_search_path_multimatch' => $node['path']),
+						array(),
+						array('referendum_search_')));
+
+     printf(T_("<h%s class='law_head law_head_%s %s'><a href='%s'>%s</a></h%s>\n"),
+	    $level, $level, $cls, $refurl, $title, $level);
     }
 
     $node_text = $node['text'];

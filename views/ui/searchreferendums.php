@@ -63,6 +63,13 @@ USA
      <tr>
       <?php
        echo drawSearchField(T_('Estimate'), 'referendum_search_completed', false, 'bound', 10, 'completed');
+       if ($category_type == 'law') {
+        echo drawSearchField(T_('Paragraphs'), 'referendum_search_path', false, 'multimatch', 10, 'law-paragraph');
+       }
+      ?>
+     </tr>
+     <tr>
+      <?php
        echo drawSearchField(T_('Status'), 'referendum_search_status',
 			    array(T_('Passed') => 1,
 				  T_('Active') => 0,

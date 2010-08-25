@@ -173,6 +173,9 @@ function drawSearchField($title, $name, $values, $type, $size = 10, $help = '') 
  } else if ($type == 'match') {
   $value = array_get($_GET, $name, "");
   $field = "<input name='{$name}' value='{$value}' type='text' size='{$size}' />";
+ } else if ($type == 'multimatch') {
+  $value = array_get($_GET, $name . '_multimatch', "");
+  $field = "<input name='{$name}_multimatch' value='{$value}' type='text' size='{$size}' />";
  } else if ($type == 'list') {
   $field = "\n";
   foreach($values as $label => $value) {
@@ -240,6 +243,13 @@ function varsToSearch($prefix, $vars) {
      $value = $keyvalue[1];
      $subkey = 'list';
      $subkeyarray = true;
+    } else if (endsWith($key, '_multimatch')) {
+     $key = substr($key, 0, strlen($key) - strlen('_multimatch'));
+     if (empty($value))
+      $value = array();
+     else
+      $value = explode(",", $value);
+     $subkey = 'list';
     } else
      $subkey = 'value';
     if (!isset($search[$key])) $search[$key] = array();
