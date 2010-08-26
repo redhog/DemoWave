@@ -36,6 +36,7 @@ USA
    ?>
    <div class="menu">
     <span class="copyright">
+     <a href="https://flattr.com/thing/54921/DemoWave" target="flattr">Flattr</a>,
      ©<a href="http://redhog.org" target="redhog_org">RedHog</a>, license: <a
      href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="license">GPL</a>
     </span>
