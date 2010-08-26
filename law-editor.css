@@ -138,6 +138,10 @@ div.law_info_13 { border-right-color: #770033; }
 div.law_info_14 { border-right-color: #330000; }
 div.law_info_15 { border-right-color: #000000; }
 
+div.law_info a {
+ float: right;
+}
+
 .law_0 div.law_info {
 }
 
