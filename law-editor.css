@@ -19,26 +19,26 @@ div.law_1 {
 }
 
 div.law_new {
- color: #008800;
  padding-left: 2px;
  border-left-color: #aaeeaa;
  border-left-width: 5px;
  border-left-style: solid;
 }
 
-div.law_new * {
+div.law_new .law_text,
+div.law_new .law_head {
  color: #008800;
 }
 
 div.law_orig {
- color: #880000;
  padding-left: 2px;
  border-left-color: #eeaaaa;
  border-left-width: 5px;
  border-left-style: solid;
 }
 
-div.law_orig * {
+div.law_orig .law_text,
+div.law_orig .law_head {
  color: #880000;
 }
 
