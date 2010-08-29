@@ -198,3 +198,12 @@ div.law_info a {
  border: 1px solid #000000;
  background: #ffffff;
 }
+
+ul.law_proposal_list {
+ list-style-type: none;
+ padding-left: 0;
+}
+
+ul.law_proposal_list * {
+ white-space: nowrap;
+}

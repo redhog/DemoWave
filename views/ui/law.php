@@ -176,17 +176,50 @@ USA
   foreach ($_GET as $key => $value)
    if (!beginsWith($key, 'law_'))
     echo "<input name='{$key}' value='{$value}' type='hidden'>\n";
-  echo "<table>\n";
-  echo "<tr>" . drawSearchField(T_("Show paragraphs as of"), 'law_date', false, 'match') . "</tr>\n";
-  echo "<tr>" . drawSearchField(T_("Show differences introduced by"), 'law_proposal', false, 'match') . "</tr>\n";
-  echo "<tr>" . drawSearchField(T_("Show"), 'law_show',
+  echo "<table>";
+  echo " <tr>";
+  echo "  <td>";
+  
+  echo "   <table>\n";
+  echo "    <tr>" . drawSearchField(T_("Show paragraphs as of"), 'law_date', false, 'match') . "</tr>\n";
+  echo "    <tr>" . drawSearchField(T_("Show"), 'law_show',
 				array(T_("Deleted paragraphs") => 'deleted',
 				      T_("Last change") => 'referendum'
 				     ),
 				'list') . "</tr>\n";
   echo drawInputRow("",
 		     "<input type='submit' name='selectdate_law' value='" . T_("Show") . "' />");
-  echo "</table>\n";
+  echo "   </table>\n";
+  echo "  </td>";
+  echo "  <td>";
+
+  echo "   <table>\n";
+  echo "    <tr>" . drawSearchField(T_("Show differences introduced by"), 'law_proposal', false, 'match') . "</tr>\n";
+  echo "    <tr>";
+  echo "     <td>";
+  echo "     </td>";
+  echo "     <td>";
+
+  echo "      <ul class='law_proposal_list'>";
+  foreach ($law_proposal as $proposal) {
+   $proposals = array();
+   if (isset($_GET["law_proposal"]) && $_GET["law_proposal"]) {
+     $proposals = explode(',', $_GET["law_proposal"]);
+   }
+   unset($proposals[array_search($proposal['referendum'], $proposals)]);
+   $proposals = implode(",", $proposals);
+   $url = '?' . queryString(queryConstruct(array('law_proposal' => $proposals)));
+   printf("    <li><a href='%s'>%s: %s</a></li>", $url, $proposal['referendum'], $proposal['title']);
+  }
+  echo "      </ul>";
+
+  echo "     </td>\n";
+  echo "    </tr>\n";
+  echo "   </table>\n";
+  echo "  </td>";
+  echo " </tr>";
+  echo "</table>";
+
   echo "</form>\n";
  }
 

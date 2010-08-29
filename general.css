@@ -83,12 +83,7 @@ textarea {
  border-color: #000000;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-dt a {
+a {
  text-decoration: none;
 }
 

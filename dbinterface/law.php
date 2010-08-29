@@ -90,5 +90,40 @@ USA
       && !isset($_POST["law_edit_continue"])) {
    $_SESSION["laweditor"] = array('laws' => $laws, 'current' => 0);
   }
+
+  $law_proposal = array();
+  if (isset($proposals)) {
+
+   $sql = "select
+	    category,
+	    path,
+	    breakpoint,
+	    referendum,
+	    title,
+	    sum,
+	    start,
+	    area,
+	    completed
+	   from
+	    referendum_status as v
+	   where     {$new_referendums_sql}
+	   order by completed asc";
+   $rows = pg_query($dbconn, $sql)
+    or die('Uanble to query for paragraphs');
+   $sql_names = array('category',
+		      'path',
+		      'breakpoint',
+		      'referendum',
+		      'title',
+		      'sum',
+		      'start',
+		      'area',
+		      'completed');
+   while ($row = pg_fetch_row($rows)) {
+    $law_proposal[] = array_combine($sql_names, $row);
+   }
+
+  }
+
  }
 ?>

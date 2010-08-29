@@ -190,6 +190,25 @@ USA
        }
       }
 
+     if ($category_type == "law") {
+      $proposals = array();
+      if (isset($_GET["law_proposal"]) && $_GET["law_proposal"]) {
+	$proposals = explode(',', $_GET["law_proposal"]);
+      }
+      foreach ($referendums as $attr) {
+       $proposals[] = $attr['referendum'];
+      }
+      $proposals = implode(",", $proposals);
+      $url = '?' . queryString(queryConstruct(array('categoryview' => 'law',
+						    'law_show__deleted_list' => 'on',
+						    'law_date' => $attr['completed'],
+						    'law_show__referendum_list' => '1',
+						    'law_proposal' => $proposals)));
+    ?>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td><?php printf("<a href='%s'>%s</a>\n", $url, T_("Law view")); ?></td></tr>
+    <?php
+     }
+
      if ($_GET['categoryview'] == 'referendums')
       {
     ?>
