@@ -8,6 +8,8 @@ DemoWave is a web-application for conducting referendums that
 
 In addition, it can manage a set of laws and referendums on changes to those laws.
 
+[Browse the documentation online](http://home.gna.org/demowave/help/index.en.html)
+
 ## Credits
 
 DemoWave was written by RedHog (Egil Möller) with support from
